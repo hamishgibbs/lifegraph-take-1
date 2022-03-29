@@ -1,24 +1,9 @@
 from utils import (
     read_json,
-    parse_date,
-    daterange_includes_now_parsed
+    resolve_id,
+    daterange_includes_now_parsed,
+    flat
 )
-
-def get_id_from_list(id, l):
-    res = [x for x in l if x["@id"] == id]
-    try:
-        assert len(res) == 1
-    except AssertionError:
-        raise Exception(f"Found multiple ids: {id}.")
-    return res[0]
-
-def resolve_id(id):
-    index = read_json("./graph/index.jsonx")
-    entities = read_json(f"./graph/{index[id]}.json")
-    return get_id_from_list(id, entities)
-
-def flat(ll):
-    return [item for sublist in ll for item in sublist]
 
 def f7(seq):
     """Return an ordered set from a list of duplicates."""

@@ -4,6 +4,7 @@ import json
 from utils import read_json
 
 def index_json_graph(path):
+    """Create a search index for JSON entities"""
     # This solution is OK for now but not scalable
     graph_fns = glob.glob(f"{path}/*.json")
     index = []

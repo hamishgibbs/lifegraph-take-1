@@ -28,5 +28,41 @@
     "name": "University of Texas at Austin",
     "city": "Austin, Texas",
     "country": "United States"
+  },
+  {
+    "@id": "CWM",
+    "name": "College of William and Mary",
+    "city": "Williamsburg, Virginia",
+    "country": "United States"
+  },
+  {
+    "@id": "COLUMBIA",
+    "name": "Columbia University",
+    "city": "New York, New York",
+    "country": "United States"
+  },
+  {
+    "@id": "UMN",
+    "name": "University of Minnesota",
+    "city": "Minneapolis, Minnesota",
+    "country": "United States"
+  },
+  {
+    "@id": "SYR",
+    "name": "Syracuse University",
+    "city": "Syracuse, New York",
+    "country": "United States"
+  },
+  {
+    "@id": "UMB",
+    "name": "UMass Boston",
+    "city": "Boston, Massachusetts",
+    "country": "United States"
+  },
+  {
+    "@id": "UG",
+    "name": "University of Glasgow",
+    "city": "Glasgow",
+    "country": "United Kingdom"
   }
 ]
