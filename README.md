@@ -50,5 +50,6 @@ Imagine:
 #### 29-03-2022
 Would be nice to express approximate dates somehow.
 
-Pretty fucking cool
+Pretty fucking cool.
+
 Would be nice to give a better indication of which types are expected
