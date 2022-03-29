@@ -41,11 +41,14 @@ def author_affiliation_text(id): # author_list
         person = resolve_id(person)
         name_formatted = f'{person["first_name"]} {person["last_name"]}'
         affiliations = []
-        for department in person["department"]:
-            if daterange_includes_now_parsed(**department):
-                department = resolve_id(department["id"])
-                university = resolve_id(department["university"])
-                affiliation_text = f'{department["name"]}, {university["name"]}, {university["city"]}, {university["country"]}.'
+        for child_org in person["affiliation"]:
+            if daterange_includes_now_parsed(**child_org):
+                child_org = resolve_id(child_org["id"])
+                if "@parent" in child_org.keys():
+                    parent = resolve_id(child_org["@parent"])
+                    affiliation_text = f'{child_org["name"]}, {parent["name"]}, {parent["city"]}, {parent["country"]}.'
+                else:
+                    affiliation_text = f'{child_org["name"]}, {child_org["city"]}, {child_org["country"]}.'
                 affiliations.append(affiliation_text)
         content.append((name_formatted, affiliations))
 

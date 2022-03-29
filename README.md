@@ -49,3 +49,4 @@ Imagine:
 
 #### 29-03-2022
 Would be nice to express approximate dates somehow.
+Some sort of incredibly simple inheritance and attempts to get relevant info (i.e. department should be subclass of university and university should be subclass of organisation - template should try to get highest resolution name and move up hierarchy) Maybe `@parent`?
