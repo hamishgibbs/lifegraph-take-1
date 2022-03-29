@@ -1,0 +1,20 @@
+[
+  {
+    "@id": "LSHTM",
+    "name": "London School of Hygiene and Tropical Medicine",
+    "city": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "@id": "UCL",
+    "name": "University College London",
+    "city": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "@id": "UCLH",
+    "name": "University College London Hospital",
+    "city": "London",
+    "country": "United Kingdom"
+  }
+]

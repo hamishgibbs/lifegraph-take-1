@@ -1,0 +1,27 @@
+[
+  {
+    "@id": "CDRC",
+    "name": "Consumer Data Research Centre",
+    "university": "UCL"
+  },
+  {
+    "@id": "CMMID",
+    "name": "Centre for the Mathematical Modelling of Infectious Diseases",
+    "university": "LSHTM"
+  },
+  {
+    "@id": "DCR",
+    "name": "Department of Clinical Research",
+    "university": "LSHTM"
+  },
+  {
+    "@id": "HTD",
+    "name": "Hospital for Tropical Diseases",
+    "university": "LSHTM"
+  },
+  {
+    "@id": "DII",
+    "name": "Division of Infection and Immunity",
+    "university": "UCL"
+  }
+]
