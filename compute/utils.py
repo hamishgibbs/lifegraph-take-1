@@ -18,6 +18,13 @@ def parse_date(date: str):
             except Exception:
                 pass
 
+def daterange_includes_now_parsed(start: str, end: str, **kwargs):
+    return daterange_includes_now(
+        parse_date(start),
+        parse_date(end),
+    )
+
+
 def daterange_includes_now(start: datetime, end: datetime):
     # is there a clever destructuring of a dict that can be done? Perhaps with kwargs?
     now = datetime.now()

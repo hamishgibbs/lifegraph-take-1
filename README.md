@@ -26,8 +26,8 @@ Some ideas:
   * Data collection for projects (like agriculture)
 
 **Computed Data**
-  * Author affiliation statement
-  * Time differences
+  * Author affiliation statement x
+  * Time differences x
   * Timelines
   * Formatted emails
   * Turn email into a standard template
@@ -46,3 +46,7 @@ Then the annotated script can be pointed at the file and the script will identif
 Imagine:
   `plot_covid_cases.py` -> Date, Observation.reportedDiseaseCases -> plots cases
   `publication_authorship.py` -> Groups.AuthorGroup -> creates text for an author list and affiliation information
+
+#### 29-03-2022
+Would be nice to express approximate dates somehow.
+May be better to have a universal ID search

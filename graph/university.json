@@ -16,5 +16,17 @@
     "name": "University College London Hospital",
     "city": "London",
     "country": "United Kingdom"
+  },
+  {
+    "@id": "IMPERIAL",
+    "name": "Imperial College London",
+    "city": "London",
+    "country": "United Kingdom"
+  },
+  {
+    "@id": "UTA",
+    "name": "University of Texas at Austin",
+    "city": "Austin, Texas",
+    "country": "United States"
   }
 ]

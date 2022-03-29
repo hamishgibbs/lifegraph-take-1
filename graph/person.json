@@ -8,7 +8,10 @@
       "Hamish.Gibbs@lshtm.ac.uk",
       "Hamish.Gibbs.21@ucl.ac.uk"],
     "orcid": "0000-0003-4413-453X",
-    "department": ["CDRC", "CMMID"]
+    "department": [
+      {"id": "CDRC", "start": "15-9-2021", "end": "thefuture"},
+      {"id": "CMMID", "start": "01-11-2019", "end": "15-9-2021"}
+    ]
   },
   {
     "@id": "yangliu",
@@ -16,7 +19,9 @@
     "last_name": "Liu",
     "email": "Yang.Liu@lshtm.ac.uk",
     "orcid": "0000-0002-9368-0425",
-    "department": ["CMMID"]
+    "department": [
+      {"id": "CMMID", "start": "thepast", "end": "thefuture"}
+    ]
   },
   {
     "@id": "rozeggo",
@@ -24,7 +29,11 @@
     "last_name": "Eggo",
     "email": "r.eggo@lshtm.ac.uk",
     "orcid": "0000-0002-0362-6717",
-    "department": ["CMMID"]
+    "department": [
+      {"id": "uta_unknown", "start": "2012", "end": "2015"},
+      {"id": "imperial_unknown", "start": "2008", "end": "2011"},
+      {"id": "CMMID", "start": "2015", "end": "thefuture"}
+    ]
   },
   {
     "@id": "michaelmarks",
@@ -32,6 +41,10 @@
     "last_name": "Marks",
     "email": "Michael.Marks@lshtm.ac.uk",
     "orcid": "0000-0002-7585-4743",
-    "department": ["DCR", "HTD", "DII"]
+    "department": [
+      {"id": "DCR", "start": "thepast", "end": "thefuture"},
+      {"id": "HTD", "start": "thepast", "end": "thefuture"},
+      {"id": "DII", "start": "thepast", "end": "thefuture"}
+    ]
   }
 ]
