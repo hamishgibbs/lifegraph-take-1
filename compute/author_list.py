@@ -12,8 +12,9 @@ def get_id_from_list(id, l):
         raise Exception(f"Found multiple ids: {id}.")
     return res[0]
 
-def resolve_id(id, type):
-    entities = read_json(f"./graph/{type}.json")
+def resolve_id(id):
+    index = read_json("./graph/index.jsonx")
+    entities = read_json(f"./graph/{index[id]}.json")
     return get_id_from_list(id, entities)
 
 def flat(ll):
@@ -32,18 +33,18 @@ def which_match(l1, l2):
     return res
 
 def author_affiliation_text(id): # author_list
-    author_list = resolve_id(id, "author_list")
+    author_list = resolve_id(id)
 
     content = []
 
     for person in author_list["person"]:
-        person = resolve_id(person, "person")
+        person = resolve_id(person)
         name_formatted = f'{person["first_name"]} {person["last_name"]}'
         affiliations = []
         for department in person["department"]:
             if daterange_includes_now_parsed(**department):
-                department = resolve_id(department["id"], "department")
-                university = resolve_id(department["university"], "university")
+                department = resolve_id(department["id"])
+                university = resolve_id(department["university"])
                 affiliation_text = f'{department["name"]}, {university["name"]}, {university["city"]}, {university["country"]}.'
                 affiliations.append(affiliation_text)
         content.append((name_formatted, affiliations))
