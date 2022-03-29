@@ -38,6 +38,8 @@ def author_affiliation_text(id): # author_list
         affiliations = []
         for department in person["department"]:
             department = resolve_id(department, "department")
+            print(department)
+            raise Exception
             university = resolve_id(department["university"], "university")
             affiliation_text = f'{department["name"]}, {university["name"]}, {university["city"]}, {university["country"]}.'
             affiliations.append(affiliation_text)

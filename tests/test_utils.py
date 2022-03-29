@@ -1,4 +1,7 @@
-from compute.utils import parse_date
+from compute.utils import (
+    parse_date,
+    daterange_includes_now
+)
 from datetime import datetime
 
 class TestParseDate():
@@ -27,3 +30,15 @@ class TestParseDate():
         date = "12-03-2020 10:52:25"
         res = parse_date(date)
         assert res == datetime(2020, 3, 12, 10, 52, 25)
+
+def test_daterange_includes_now_true():
+    start = parse_date("thepast")
+    end = parse_date("thefuture")
+    res = daterange_includes_now(start, end)
+    assert res
+
+def test_daterange_includes_now_false():
+    start = parse_date("1970")
+    end = parse_date("1985")
+    res = daterange_includes_now(start, end)
+    assert not res
