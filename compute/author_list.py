@@ -8,7 +8,6 @@ def get_id_from_list(id, l):
         raise Exception(f"Found multiple ids: {id}.")
     return res[0]
 
-
 def resolve_id(id, type):
     entities = read_json(f"./graph/{type}.json")
     return get_id_from_list(id, entities)
