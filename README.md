@@ -59,6 +59,9 @@ For automated testing - the thing should be flagged as a compute snippet and mus
 - run the compute snippets against the generated data and check for failure
 - if no failure - this snippet will still work with current schema
 
+Audit for shadowed inherited properties
+Audit for duplicated entity IDs
+
 #### 30-03-2022
 Zaifen family tree & email templates
 

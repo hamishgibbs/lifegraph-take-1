@@ -1,0 +1,16 @@
+[
+    {
+        "@id": "alexander_tenure",
+        "@type": "tenure",
+        "person": "alexander_the_great",
+        "start": "336 BC",
+        "end": "323 BC"
+    },
+    {
+        "@id": "darius_1_tenure",
+        "@type": "tenure",
+        "person": "darius_1",
+        "start": "522 BC",
+        "end": "486 BC"
+    }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "@id": "achaemenid_empire",
+    "@type": "empire",
+    "name": "Achaemenid Empire",
+    "ruler": [
+      "darius_1_tenure"
+    ]
+  },
+  {
+    "@id": "macedonian_empire",
+    "@type": "empire",
+    "name": "Macedonia",
+    "ruler": [
+      "alexander_tenure"
+    ]
+  }
+]

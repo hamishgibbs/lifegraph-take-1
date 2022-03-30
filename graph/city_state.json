@@ -1,0 +1,17 @@
+[
+    {
+        "@id": "athens",
+        "@type": "city_state",
+        "name": "Athens"
+    },
+    {
+        "@id": "plataea",
+        "@type": "city_state",
+        "name": "Plataea"
+    },
+    {
+        "@id": "ancient_syracuse",
+        "@type": "city_state",
+        "name": "Syracuse"
+    }
+]

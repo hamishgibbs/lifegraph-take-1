@@ -4,7 +4,7 @@
     "@type": "battle",
     "name": "The Battle of Marathon",
     "date": "490 BC",
-    "combatants": [],
+    "belligerents": ["achaemenid_empire", "marathon_greek_alliance"],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -12,7 +12,7 @@
     "@type": "battle",
     "name": "Defeat of the Athenians at Syracuse",
     "date": "413 BC",
-    "combatants": [],
+    "belligerents": ["athens", "ancient_syracuse"],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -20,7 +20,7 @@
     "@type": "battle",
     "name": "The Battle of Arbela",
     "date": "331 BC",
-    "combatants": [],
+    "belligerents": ["achaemenid_empire", "macedonian_empire"],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -28,7 +28,7 @@
     "@type": "battle",
     "name": "The Battle of Metaurus",
     "date": "207 BC",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -36,7 +36,7 @@
     "@type": "battle",
     "name": "Victory of Arminius Over the Roman Legions",
     "date": "9 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -44,7 +44,7 @@
     "@type": "battle",
     "name": "Battle of Chalons",
     "date": "451 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -52,7 +52,7 @@
     "@type": "battle",
     "name": "Battle of Tours",
     "date": "732 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -60,7 +60,7 @@
     "@type": "battle",
     "name": "Battle of Hastings",
     "date": "1066 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -68,7 +68,7 @@
     "@type": "battle",
     "name": "Joan of Arc's Victory over the English at Orleans",
     "date": "1429 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -76,7 +76,7 @@
     "@type": "battle",
     "name": "Defeat of the Spanish Armada",
     "date": "1588 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -84,7 +84,7 @@
     "@type": "battle",
     "name": "Battle of Blenheim",
     "date": "1704 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -92,7 +92,7 @@
     "@type": "battle",
     "name": "Battle of Pultowa",
     "date": "1709 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -100,7 +100,7 @@
     "@type": "battle",
     "name": "Victory of the Americans over Burgoyne at Saratoga",
     "date": "1777 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -108,7 +108,7 @@
     "@type": "battle",
     "name": "Battle of Valmy",
     "date": "1792 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -116,7 +116,7 @@
     "@type": "battle",
     "name": "Battle of Waterloo",
     "date": "1815 AD",
-    "combatants": [],
+    "belligerents": [],
     "referenced_in": ["fifteen_decisive_battles"]
   }
 ]

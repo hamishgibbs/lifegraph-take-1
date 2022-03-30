@@ -2,6 +2,9 @@
     "affiliation": [
         "affiliation"
     ],
+    "alliance": [
+        "alliance"
+    ],
     "author_list": [
         "author_list"
     ],
@@ -14,6 +17,9 @@
     "chemistry_department": [
         "chemistry_department"
     ],
+    "city_state": [
+        "city_state"
+    ],
     "creative_work": [
         "book",
         "creative_work"
@@ -21,14 +27,23 @@
     "email_template": [
         "email_template"
     ],
+    "empire": [
+        "empire"
+    ],
     "organisation": [
+        "alliance",
         "organisation",
         "chemistry_department",
         "university",
+        "empire",
+        "city_state",
         "university_department"
     ],
     "person": [
         "person"
+    ],
+    "tenure": [
+        "tenure"
     ],
     "university": [
         "university"

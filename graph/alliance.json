@@ -1,0 +1,7 @@
+[
+    {
+        "@id": "marathon_greek_alliance",
+        "@type": "alliance",
+        "member": ["athens", "plataea"]
+    }
+]

@@ -81,8 +81,37 @@
     "properties": {
       "name": "string",
       "date": "string",
-      "combatants": "organisation",
+      "belligerents": "organisation",
       "referenced_in": "book"
+    }
+  },
+  {
+    "@id": "alliance",
+    "@parent": "organisation",
+    "properties": {
+      "member": "organisation"
+    }
+  },
+  {
+    "@id": "empire",
+    "@parent": "organisation",
+    "properties": {
+      "ruler": "tenure"
+    }
+  },
+  {
+    "@id": "city_state",
+    "@parent": "organisation",
+    "properties": {
+      "ruler": "tenure"
+    }
+  },
+  {
+    "@id": "tenure",
+    "properties": {
+      "person": "person",
+      "start": "date",
+      "end": "date"
     }
   }
 ]

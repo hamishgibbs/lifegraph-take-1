@@ -2,12 +2,27 @@
     "affiliation": {
         "end": "date",
         "organisation": [
+            "alliance",
             "organisation",
             "chemistry_department",
             "university",
+            "empire",
+            "city_state",
             "university_department"
         ],
         "start": "date"
+    },
+    "alliance": {
+        "member": [
+            "alliance",
+            "organisation",
+            "chemistry_department",
+            "university",
+            "empire",
+            "city_state",
+            "university_department"
+        ],
+        "name": "string"
     },
     "author_list": {
         "authors": [
@@ -15,10 +30,13 @@
         ]
     },
     "battle": {
-        "combatants": [
+        "belligerents": [
+            "alliance",
             "organisation",
             "chemistry_department",
             "university",
+            "empire",
+            "city_state",
             "university_department"
         ],
         "date": "string",
@@ -40,11 +58,23 @@
             "university"
         ]
     },
+    "city_state": {
+        "name": "string",
+        "ruler": [
+            "tenure"
+        ]
+    },
     "creative_work": {
         "name": "string"
     },
     "email_template": {
         "body": "string"
+    },
+    "empire": {
+        "name": "string",
+        "ruler": [
+            "tenure"
+        ]
     },
     "organisation": {
         "name": "string"
@@ -71,6 +101,13 @@
         "son": [
             "person"
         ]
+    },
+    "tenure": {
+        "end": "date",
+        "person": [
+            "person"
+        ],
+        "start": "date"
     },
     "university": {
         "city": "string",
