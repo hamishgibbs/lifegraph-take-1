@@ -9,8 +9,8 @@
         "chemistry_department"
     ],
     "organisation": [
-        "organisation",
         "university_department",
+        "organisation",
         "chemistry_department",
         "university"
     ],
