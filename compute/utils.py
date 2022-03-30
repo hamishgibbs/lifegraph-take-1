@@ -1,5 +1,5 @@
 import json
-from datetime import datetime
+from astropy.time import Time
 
 def read_json(fn):
     with open(fn, "r") as f:
@@ -21,13 +21,19 @@ def resolve_id(id):
 def parse_date(date: str):
     date_patterns = ["%Y", "%d-%m-%Y", "%d-%m-%Y %H:%M:%S"]
     if date == "thepast":
-        return datetime.min
+        return Time(f"-{4713:05}-01-01T00:00:00", format="fits")
     elif date == "thefuture":
-        return datetime.max
+        return Time.strptime("9999", "%Y")
+    elif " BC" in date:
+        year = int(date.split(" ")[0])
+        return Time(f"-{year:05}-01-01T00:00:00", format="fits")
+    elif " AD" in date:
+        year = int(date.split(" ")[0])
+        return Time(f"{year:04}-01-01T00:00:00", format="fits")
     else:
         for pattern in date_patterns:
             try:
-                return datetime.strptime(date, pattern)
+                return Time.strptime(date, pattern)
             except Exception:
                 pass
 
@@ -38,9 +44,9 @@ def daterange_includes_now_parsed(start: str, end: str, **kwargs):
     )
 
 
-def daterange_includes_now(start: datetime, end: datetime):
+def daterange_includes_now(start: Time, end: Time):
     # is there a clever destructuring of a dict that can be done? Perhaps with kwargs?
-    now = datetime.now()
+    now = Time.now()
     return now >= start and now <= end
 
 def flat(ll):

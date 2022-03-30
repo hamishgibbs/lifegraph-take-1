@@ -31,13 +31,13 @@
         "empire"
     ],
     "organisation": [
-        "alliance",
+        "university_department",
         "organisation",
+        "empire",
         "chemistry_department",
         "university",
-        "empire",
-        "city_state",
-        "university_department"
+        "alliance",
+        "city_state"
     ],
     "person": [
         "person"

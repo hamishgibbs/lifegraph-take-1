@@ -2,25 +2,25 @@
     "affiliation": {
         "end": "date",
         "organisation": [
-            "alliance",
+            "university_department",
             "organisation",
+            "empire",
             "chemistry_department",
             "university",
-            "empire",
-            "city_state",
-            "university_department"
+            "alliance",
+            "city_state"
         ],
         "start": "date"
     },
     "alliance": {
         "member": [
-            "alliance",
+            "university_department",
             "organisation",
+            "empire",
             "chemistry_department",
             "university",
-            "empire",
-            "city_state",
-            "university_department"
+            "alliance",
+            "city_state"
         ],
         "name": "string"
     },
@@ -31,13 +31,13 @@
     },
     "battle": {
         "belligerents": [
-            "alliance",
+            "university_department",
             "organisation",
+            "empire",
             "chemistry_department",
             "university",
-            "empire",
-            "city_state",
-            "university_department"
+            "alliance",
+            "city_state"
         ],
         "date": "string",
         "name": "string",
