@@ -34,7 +34,12 @@
       "last_name": "string",
       "email": "string",
       "orcid": "string",
-      "affiliation": "affiliation"
+      "affiliation": "affiliation",
+      "father": "person",
+      "mother": "person",
+      "brother": "person",
+      "son": "person",
+      "official_title": "string"
     }
   },
   {

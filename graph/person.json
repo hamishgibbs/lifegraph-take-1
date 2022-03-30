@@ -37,5 +37,52 @@
     "email": "Michael.Marks@lshtm.ac.uk",
     "orcid": "0000-0002-7585-4743",
     "affiliation": ["af11", "af12", "af13"]
+  },
+  {
+    "@id": "zaifeng",
+    "@type": "person",
+    "first_name": "Zaifeng",
+    "official_title": "Prince Chun",
+    "father": "yixuan",
+    "mother": "cuiyan",
+    "son": "puyi",
+    "brother": "zaitian"
+  },
+  {
+    "@id": "yixuan",
+    "@type": "person",
+    "first_name": "Yixuan",
+    "official_title": "Prince Chun",
+    "father": "mianning",
+    "son": "zaifeng"
+  },
+  {
+    "@id": "mianning",
+    "@type": "person",
+    "first_name": "Mianning",
+    "official_title": "Daoguang Emperor",
+    "son": "yixuan"
+  },
+  {
+    "@id": "puyi",
+    "@type": "person",
+    "first_name": "Puyi",
+    "official_title": "Emperor",
+    "father": "zaifeng"
+  },
+  {
+    "@id": "cuiyan",
+    "@type": "person",
+    "first_name": "Cuiyan",
+    "son": "zaifeng"
+  },
+  {
+    "@id": "zaitian",
+    "@type": "person",
+    "first_name": "Zaitian",
+    "official_title": "Guangxu Emperor",
+    "brother": "zaifeng",
+    "father": "yixuan",
+    "mother": "cuiyan"
   }
 ]

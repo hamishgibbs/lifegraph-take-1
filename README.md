@@ -50,8 +50,13 @@ Imagine:
 #### 29-03-2022
 Would be nice to express approximate dates somehow.
 
-Pretty fucking cool.
-
 Gen random data from schema for testing and checking that all compute works on current schema
 
 All compute snippets could be automatically tested to ensure that they comply with a certain schema and in many cases they could be automatically updated to comply with a new schema
+
+#### 30-03-2022
+Zaifen family tree & email templates
+
+#### Notes
+Pretty fucking cool.
+It is very easy to update broken code after schema changes and get it working with new schema

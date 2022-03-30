@@ -4,8 +4,8 @@
         "organisation": [
             "university",
             "university_department",
-            "organisation",
-            "chemistry_department"
+            "chemistry_department",
+            "organisation"
         ],
         "start": "date"
     },
@@ -28,10 +28,23 @@
         "affiliation": [
             "affiliation"
         ],
+        "brother": [
+            "person"
+        ],
         "email": "string",
+        "father": [
+            "person"
+        ],
         "first_name": "string",
         "last_name": "string",
-        "orcid": "string"
+        "mother": [
+            "person"
+        ],
+        "official_title": "string",
+        "orcid": "string",
+        "son": [
+            "person"
+        ]
     },
     "university": {
         "city": "string",

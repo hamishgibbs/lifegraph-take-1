@@ -11,8 +11,8 @@
     "organisation": [
         "university",
         "university_department",
-        "organisation",
-        "chemistry_department"
+        "chemistry_department",
+        "organisation"
     ],
     "person": [
         "person"
