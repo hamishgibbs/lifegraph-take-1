@@ -22,15 +22,16 @@ def author_affiliation_text(id): # author_list
 
     content = []
 
-    for person in author_list["person"]:
+    for person in author_list["authors"]:
         person = resolve_id(person)
         name_formatted = f'{person["first_name"]} {person["last_name"]}'
         affiliations = []
         for child_org in person["affiliation"]:
-            if daterange_includes_now_parsed(**child_org):
-                child_org = resolve_id(child_org["id"])
-                if "@parent" in child_org.keys():
-                    parent = resolve_id(child_org["@parent"])
+            affiliation = resolve_id(child_org)
+            child_org = resolve_id(affiliation["organisation"])
+            if daterange_includes_now_parsed(**affiliation):
+                if "parent_organisation" in child_org.keys():
+                    parent = resolve_id(child_org["parent_organisation"])
                     affiliation_text = f'{child_org["name"]}, {parent["name"]}, {parent["city"]}, {parent["country"]}.'
                 else:
                     affiliation_text = f'{child_org["name"]}, {child_org["city"]}, {child_org["country"]}.'
