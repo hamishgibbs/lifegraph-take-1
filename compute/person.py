@@ -1,10 +1,11 @@
+import sys
 from utils import (
     resolve_id,
     parse_date,
     flat
 )
 import networkx as nx
-from pyvis.network import network
+from pyvis.network import Network
 import matplotlib.pyplot as plt
 
 def person_brief_resume(id):
@@ -69,36 +70,31 @@ def create_family_tree(people):
         else:
             name_formatted = f'{person["first_name"]}'
 
-        G.add_node(person["@id"], name=name_formatted)
+        G.add_node(person["@id"], label=name_formatted)
 
     for person in people:
         for k in person:
             if k in ["mother", "father", "brother", "son"]:
-                G.add_edge(person["@id"], person[k], type=k)
+                G.add_edge(person["@id"], person[k], label=k)
 
-    pos = nx.spring_layout(G)
-    plt.figure()
-    nx.draw_networkx_nodes(G, pos)
-    nx.draw_networkx_labels(G, pos, labels=nx.get_node_attributes(G, "name"))
-    nx.draw_networkx_edges(
-        G, pos,
-        label=nx.get_edge_attributes(G, "type"),
-        connectionstyle='arc3, rad = 0.1'
-    )
-    plt.savefig("output/create_family_tree.png")
-
+    net = Network(directed =True)
+    net.set_edge_smooth('dynamic')
+    net.from_nx(G)
+    net.show("./output/create_family_tree.html")
 
 def main():
-    #resume_brief_summary("hamishgibbs")
-    #weave_resume_brief_summary(["hamishgibbs", "yangliu", "rozeggo"])
-    create_family_tree([
-        "zaifeng",
-        "yixuan",
-        "mianning",
-        "puyi",
-        "cuiyan",
-        "zaitian"
-    ])
+    # resume_brief_summary("hamishgibbs")
+    if sys.argv[1] == "weave_resumes":
+        weave_resume_brief_summary(["hamishgibbs", "yangliu", "rozeggo"])
+    elif sys.argv[1] == "family_tree":
+        create_family_tree([
+            "zaifeng",
+            "yixuan",
+            "mianning",
+            "puyi",
+            "cuiyan",
+            "zaitian"
+        ])
 
 if __name__ == "__main__":
     main()

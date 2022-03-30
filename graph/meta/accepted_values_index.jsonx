@@ -9,10 +9,10 @@
         "chemistry_department"
     ],
     "organisation": [
-        "university",
+        "organisation",
         "university_department",
         "chemistry_department",
-        "organisation"
+        "university"
     ],
     "person": [
         "person"

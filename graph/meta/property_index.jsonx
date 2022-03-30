@@ -2,10 +2,10 @@
     "affiliation": {
         "end": "date",
         "organisation": [
-            "university",
+            "organisation",
             "university_department",
             "chemistry_department",
-            "organisation"
+            "university"
         ],
         "start": "date"
     },

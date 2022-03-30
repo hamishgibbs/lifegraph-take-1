@@ -54,7 +54,8 @@
     "first_name": "Yixuan",
     "official_title": "Prince Chun",
     "father": "mianning",
-    "son": "zaifeng"
+    "son": "zaifeng",
+    "son": "zaitian"
   },
   {
     "@id": "mianning",
@@ -74,7 +75,8 @@
     "@id": "cuiyan",
     "@type": "person",
     "first_name": "Cuiyan",
-    "son": "zaifeng"
+    "son": "zaifeng",
+    "son": "zaitian"
   },
   {
     "@id": "zaitian",

@@ -125,7 +125,7 @@ def audit_graph_schema():
 
 
     if len(audit_failures) == 0:
-        print(f"All good! Audited {audited_entities:,} entities with {audited_properties:,} properties.")
+        print(f"Graph is compliant with schema. Audited {audited_entities:,} entities with {audited_properties:,} properties.")
     else:
         print("\n\n".join(audit_failures))
 
