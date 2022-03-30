@@ -1,0 +1,47 @@
+{
+    "affiliation": {
+        "end": "date",
+        "organisation": [
+            "university",
+            "university_department",
+            "chemistry_department",
+            "organisation"
+        ],
+        "start": "date"
+    },
+    "author_list": {
+        "authors": [
+            "person"
+        ]
+    },
+    "chemistry_department": {
+        "chemistry_field": "string",
+        "name": "string",
+        "parent_organisation": [
+            "university"
+        ]
+    },
+    "organisation": {
+        "name": "string"
+    },
+    "person": {
+        "affiliation": [
+            "affiliation"
+        ],
+        "email": "string",
+        "first_name": "string",
+        "last_name": "string",
+        "orcid": "string"
+    },
+    "university": {
+        "city": "string",
+        "country": "string",
+        "name": "string"
+    },
+    "university_department": {
+        "name": "string",
+        "parent_organisation": [
+            "university"
+        ]
+    }
+}

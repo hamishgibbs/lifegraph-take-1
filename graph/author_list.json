@@ -1,7 +1,8 @@
 [
   {
     "@id": "paper#1",
-    "person": [
+    "@type": "author_list",
+    "authors": [
       "hamishgibbs",
       "yangliu",
       "rozeggo",

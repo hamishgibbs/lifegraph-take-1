@@ -1,0 +1,54 @@
+[
+  {
+    "@id": "organisation",
+    "properties": {
+      "name": "string"
+    }
+  },
+  {
+    "@id": "university",
+    "@parent": "organisation",
+    "properties": {
+      "city": "string",
+      "country": "string"
+    }
+  },
+  {
+    "@id": "university_department",
+    "@parent": "organisation",
+    "properties": {
+      "parent_organisation": "university"
+    }
+  },
+  {
+    "@id": "chemistry_department",
+    "@parent": "university_department",
+    "properties": {
+      "chemistry_field": "string"
+    }
+  },
+  {
+    "@id": "person",
+    "properties": {
+      "first_name": "string",
+      "last_name": "string",
+      "email": "string",
+      "orcid": "string",
+      "affiliation": "affiliation"
+    }
+  },
+  {
+    "@id": "affiliation",
+    "properties": {
+      "organisation": "organisation",
+      "start": "date",
+      "end": "date"
+    }
+  },
+  {
+    "@id": "author_list",
+    "properties": {
+      "authors": "person"
+    }
+  }
+]

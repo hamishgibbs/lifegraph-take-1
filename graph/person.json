@@ -1,6 +1,7 @@
 [
   {
     "@id": "hamishgibbs",
+    "@type": "person",
     "first_name": "Hamish",
     "last_name": "Gibbs",
     "email": [
@@ -8,49 +9,33 @@
       "Hamish.Gibbs@lshtm.ac.uk",
       "Hamish.Gibbs.21@ucl.ac.uk"],
     "orcid": "0000-0003-4413-453X",
-    "affiliation": [
-      {"id": "SYR", "start": "2014", "end": "2017"},
-      {"id": "UMB", "start": "2016", "end": "2016"},
-      {"id": "UG", "start": "2018", "end": "2019"},
-      {"id": "CDRC", "start": "15-9-2021", "end": "thefuture"},
-      {"id": "CMMID", "start": "01-11-2019", "end": "15-9-2021"}
-    ]
+    "affiliation": ["af0", "af1", "af2", "af3"]
   },
   {
     "@id": "yangliu",
+    "@type": "person",
     "first_name": "Yang",
     "last_name": "Liu",
     "email": "Yang.Liu@lshtm.ac.uk",
     "orcid": "0000-0002-9368-0425",
-    "affiliation": [
-      {"id": "CWM", "start": "2007", "end": "2011"},
-      {"id": "COLUMBIA", "start": "2011", "end": "2013"},
-      {"id": "UMN", "start": "2013", "end": "2018"},
-      {"id": "CMMID", "start": "2018", "end": "thefuture"}
-    ]
+    "affiliation": ["af4", "af5", "af6", "af7"]
   },
   {
     "@id": "rozeggo",
+    "@type": "person",
     "first_name": "Roz",
     "last_name": "Eggo",
     "email": "r.eggo@lshtm.ac.uk",
     "orcid": "0000-0002-0362-6717",
-    "affiliation": [
-      {"id": "IMPERIAL", "start": "2008", "end": "2012"},
-      {"id": "UTA", "start": "2012", "end": "2015"},
-      {"id": "CMMID", "start": "2015", "end": "thefuture"}
-    ]
+    "affiliation": ["af8", "af9", "af10"]
   },
   {
     "@id": "michaelmarks",
+    "@type": "person",
     "first_name": "Michael",
     "last_name": "Marks",
     "email": "Michael.Marks@lshtm.ac.uk",
     "orcid": "0000-0002-7585-4743",
-    "affiliation": [
-      {"id": "DCR", "start": "thepast", "end": "thefuture"},
-      {"id": "HTD", "start": "thepast", "end": "thefuture"},
-      {"id": "DII", "start": "thepast", "end": "thefuture"}
-    ]
+    "affiliation": ["af11", "af12", "af13"]
   }
 ]

@@ -14,7 +14,7 @@ def get_id_from_list(id, l):
     return res[0]
 
 def resolve_id(id):
-    index = read_json("./graph/index.jsonx")
+    index = read_json("./graph/meta/index.jsonx")
     entities = read_json(f"./graph/{index[id]}.json")
     return get_id_from_list(id, entities)
 

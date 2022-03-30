@@ -1,27 +1,32 @@
 [
   {
     "@id": "CDRC",
-    "@parent": "UCL",
+    "@type": "university_department",
+    "parent_organisation": "UCL",
     "name": "Consumer Data Research Centre"
   },
   {
     "@id": "CMMID",
-    "@parent": "LSHTM",
+    "@type": "university_department",
+    "parent_organisation": "LSHTM",
     "name": "Centre for the Mathematical Modelling of Infectious Diseases"
   },
   {
     "@id": "DCR",
-    "@parent": "LSHTM",
+    "@type": "university_department",
+    "parent_organisation": "LSHTM",
     "name": "Department of Clinical Research"
   },
   {
     "@id": "HTD",
-    "@parent": "UCLH",
+    "@type": "university_department",
+    "parent_organisation": "UCLH",
     "name": "Hospital for Tropical Diseases"
   },
   {
     "@id": "DII",
-    "@parent": "UCL",
+    "@type": "university_department",
+    "parent_organisation": "UCL",
     "name": "Division of Infection and Immunity"
   }
 ]

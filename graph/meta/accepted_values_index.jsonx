@@ -1,0 +1,27 @@
+{
+    "affiliation": [
+        "affiliation"
+    ],
+    "author_list": [
+        "author_list"
+    ],
+    "chemistry_department": [
+        "chemistry_department"
+    ],
+    "organisation": [
+        "university",
+        "university_department",
+        "chemistry_department",
+        "organisation"
+    ],
+    "person": [
+        "person"
+    ],
+    "university": [
+        "university"
+    ],
+    "university_department": [
+        "university_department",
+        "chemistry_department"
+    ]
+}

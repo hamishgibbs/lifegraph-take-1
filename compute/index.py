@@ -16,7 +16,7 @@ def index_json_graph(path):
             except Exception:
                 raise Exception(f'Duplicate @id: {entity["@id"]} in {fn}')
             index.append((entity["@id"], os.path.basename(fn).split(".")[0]))
-    with open("./graph/index.jsonx", "w") as f:
+    with open("./graph/meta/index.jsonx", "w") as f:
         json.dump(dict(index), f, sort_keys=True, indent=4)
 
 def main():

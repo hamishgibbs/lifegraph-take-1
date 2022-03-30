@@ -1,66 +1,77 @@
 [
   {
     "@id": "LSHTM",
+    "@type": "university",
     "name": "London School of Hygiene and Tropical Medicine",
     "city": "London",
     "country": "United Kingdom"
   },
   {
     "@id": "UCL",
+    "@type": "university",
     "name": "University College London",
     "city": "London",
     "country": "United Kingdom"
   },
   {
     "@id": "UCLH",
+    "@type": "university",
     "name": "University College London Hospital",
     "city": "London",
     "country": "United Kingdom"
   },
   {
     "@id": "IMPERIAL",
+    "@type": "university",
     "name": "Imperial College London",
     "city": "London",
     "country": "United Kingdom"
   },
   {
     "@id": "UTA",
+    "@type": "university",
     "name": "University of Texas at Austin",
     "city": "Austin, Texas",
     "country": "United States"
   },
   {
     "@id": "CWM",
+    "@type": "university",
     "name": "College of William and Mary",
     "city": "Williamsburg, Virginia",
     "country": "United States"
   },
   {
     "@id": "COLUMBIA",
+    "@type": "university",
     "name": "Columbia University",
     "city": "New York, New York",
     "country": "United States"
   },
   {
     "@id": "UMN",
+    "@type": "university",
     "name": "University of Minnesota",
     "city": "Minneapolis, Minnesota",
     "country": "United States"
   },
   {
     "@id": "SYR",
+    "@type": "university",
     "name": "Syracuse University",
     "city": "Syracuse, New York",
     "country": "United States"
   },
   {
     "@id": "UMB",
+    "@type": "university",
     "name": "UMass Boston",
     "city": "Boston, Massachusetts",
     "country": "United States"
   },
   {
     "@id": "UG",
+    "@type": "university",
     "name": "University of Glasgow",
     "city": "Glasgow",
     "country": "United Kingdom"
