@@ -86,9 +86,14 @@ def audit_graph_schema():
 
     audit_failures = []
 
+    audited_entities = 0
+    audited_properties = 0
+
     for fn in graph_fns:
         graph = read_json(fn)
         for entity in graph:
+            audited_entities += 1
+            audited_properties += len(entity.keys())
             try:
                 expected_properties = property_index[entity["@type"]]
             except KeyError:
@@ -116,10 +121,11 @@ def audit_graph_schema():
                             for value in value_content:
                                 audit_value_type_compliance(entity, entity_key, value, expected_type, audit_failures)
                         else:
-                                audit_value_type_compliance(entity, entity_key, value_content, expected_type, audit_failures)
+                            audit_value_type_compliance(entity, entity_key, value_content, expected_type, audit_failures)
+
 
     if len(audit_failures) == 0:
-        print("All good!")
+        print(f"All good! Audited {audited_entities:,} entities with {audited_properties:,} properties.")
     else:
         print("\n\n".join(audit_failures))
 

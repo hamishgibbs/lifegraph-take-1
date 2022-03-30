@@ -9,10 +9,10 @@
         "chemistry_department"
     ],
     "organisation": [
+        "organisation",
         "university",
         "university_department",
-        "chemistry_department",
-        "organisation"
+        "chemistry_department"
     ],
     "person": [
         "person"
@@ -21,7 +21,7 @@
         "university"
     ],
     "university_department": [
-        "university_department",
-        "chemistry_department"
+        "chemistry_department",
+        "university_department"
     ]
 }

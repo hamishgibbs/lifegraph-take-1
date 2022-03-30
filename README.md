@@ -52,13 +52,4 @@ Would be nice to express approximate dates somehow.
 
 Pretty fucking cool.
 
-Would be nice to give a better indication of which types are expected
-
 Gen random data from schema for testing and checking that all compute works on current schema
-
-Add @type and `schema.jsonx` and check that all types comply with schema. No qualifiers, just additional types. Type can but does not have to have all properties.
-
-
-Schema:
-
-No docs for now
