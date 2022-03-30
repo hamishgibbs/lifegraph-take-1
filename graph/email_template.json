@@ -1,0 +1,7 @@
+[
+  {
+    "@id": "author_preliminary_review",
+    "@type": "email_template",
+    "body": "Hello all,{newline}{newline}We have prepared our manuscript {manuscript_title} for review by coauthors.{newline}{newline}Please could you add any comments as tracked changes in the document here:{newline}{newline}{manuscript_link}{newline}{newline}Also, could you please complete this review by {review_deadline}?{newline}{newline}Thank you to everyone for your contributions to this research. Please send me a message if you have any questions.{newline}{newline}All the best,{newline}Hamish"
+  }
+]

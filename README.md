@@ -28,8 +28,8 @@ Some ideas:
 **Computed Data**
   * Author affiliation statement x
   * Time differences x
-  * Timelines
-  * Formatted emails
+  * Timelines x
+  * Formatted emails x
   * Turn email into a standard template
   * Meeting minutes
   * Topic annotation linked to meeting transcript
@@ -53,6 +53,11 @@ Would be nice to express approximate dates somehow.
 Gen random data from schema for testing and checking that all compute works on current schema
 
 All compute snippets could be automatically tested to ensure that they comply with a certain schema and in many cases they could be automatically updated to comply with a new schema
+
+For automated testing - the thing should be flagged as a compute snippet and must take IDs of annotated type as input
+- gen arbitrary data
+- run the compute snippets against the generated data and check for failure
+- if no failure - this snippet will still work with current schema
 
 #### 30-03-2022
 Zaifen family tree & email templates

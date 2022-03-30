@@ -2,10 +2,10 @@
     "affiliation": {
         "end": "date",
         "organisation": [
-            "university_department",
             "organisation",
             "chemistry_department",
-            "university"
+            "university",
+            "university_department"
         ],
         "start": "date"
     },
@@ -14,12 +14,37 @@
             "person"
         ]
     },
+    "battle": {
+        "combatants": [
+            "organisation",
+            "chemistry_department",
+            "university",
+            "university_department"
+        ],
+        "date": "string",
+        "name": "string",
+        "referenced_in": [
+            "book"
+        ]
+    },
+    "book": {
+        "author": [
+            "person"
+        ],
+        "name": "string"
+    },
     "chemistry_department": {
         "chemistry_field": "string",
         "name": "string",
         "parent_organisation": [
             "university"
         ]
+    },
+    "creative_work": {
+        "name": "string"
+    },
+    "email_template": {
+        "body": "string"
     },
     "organisation": {
         "name": "string"
@@ -37,6 +62,7 @@
         ],
         "first_name": "string",
         "last_name": "string",
+        "middle_name": "string",
         "mother": [
             "person"
         ],

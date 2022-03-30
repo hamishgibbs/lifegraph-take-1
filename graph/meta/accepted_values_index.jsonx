@@ -5,14 +5,27 @@
     "author_list": [
         "author_list"
     ],
+    "battle": [
+        "battle"
+    ],
+    "book": [
+        "book"
+    ],
     "chemistry_department": [
         "chemistry_department"
     ],
+    "creative_work": [
+        "book",
+        "creative_work"
+    ],
+    "email_template": [
+        "email_template"
+    ],
     "organisation": [
-        "university_department",
         "organisation",
         "chemistry_department",
-        "university"
+        "university",
+        "university_department"
     ],
     "person": [
         "person"
@@ -21,7 +34,7 @@
         "university"
     ],
     "university_department": [
-        "university_department",
-        "chemistry_department"
+        "chemistry_department",
+        "university_department"
     ]
 }

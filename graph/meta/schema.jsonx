@@ -31,6 +31,7 @@
     "@id": "person",
     "properties": {
       "first_name": "string",
+      "middle_name": "string",
       "last_name": "string",
       "email": "string",
       "orcid": "string",
@@ -54,6 +55,34 @@
     "@id": "author_list",
     "properties": {
       "authors": "person"
+    }
+  },
+  {
+    "@id": "email_template",
+    "properties": {
+      "body": "string"
+    }
+  },
+  {
+    "@id": "creative_work",
+    "properties": {
+      "name": "string"
+    }
+  },
+  {
+    "@id": "book",
+    "@parent": "creative_work",
+    "properties": {
+      "author": "person"
+    }
+  },
+  {
+    "@id": "battle",
+    "properties": {
+      "name": "string",
+      "date": "string",
+      "combatants": "organisation",
+      "referenced_in": "book"
     }
   }
 ]

@@ -1,0 +1,122 @@
+[
+  {
+    "@id": "battle_marathon",
+    "@type": "battle",
+    "name": "The Battle of Marathon",
+    "date": "490 BC",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_syracuse",
+    "@type": "battle",
+    "name": "Defeat of the Athenians at Syracuse",
+    "date": "413 BC",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_arbela",
+    "@type": "battle",
+    "name": "The Battle of Arbela",
+    "date": "331 BC",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_metaurus",
+    "@type": "battle",
+    "name": "The Battle of Metaurus",
+    "date": "207 BC",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_arminius",
+    "@type": "battle",
+    "name": "Victory of Arminius Over the Roman Legions",
+    "date": "9 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_chalons",
+    "@type": "battle",
+    "name": "Battle of Chalons",
+    "date": "451 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_tours",
+    "@type": "battle",
+    "name": "Battle of Tours",
+    "date": "732 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_hastings",
+    "@type": "battle",
+    "name": "Battle of Hastings",
+    "date": "1066 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_orleans",
+    "@type": "battle",
+    "name": "Joan of Arc's Victory over the English at Orleans",
+    "date": "1429 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_armada",
+    "@type": "battle",
+    "name": "Defeat of the Spanish Armada",
+    "date": "1588 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_blenheim",
+    "@type": "battle",
+    "name": "Battle of Blenheim",
+    "date": "1704 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_pultowa",
+    "@type": "battle",
+    "name": "Battle of Pultowa",
+    "date": "1709 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_saratoga",
+    "@type": "battle",
+    "name": "Victory of the Americans over Burgoyne at Saratoga",
+    "date": "1777 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_valmy",
+    "@type": "battle",
+    "name": "Battle of Valmy",
+    "date": "1792 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  },
+  {
+    "@id": "battle_waterloo",
+    "@type": "battle",
+    "name": "Battle of Waterloo",
+    "date": "1815 AD",
+    "combatants": [],
+    "referenced_in": ["fifteen_decisive_battles"]
+  }
+]

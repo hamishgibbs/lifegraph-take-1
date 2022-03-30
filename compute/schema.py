@@ -7,6 +7,7 @@ from utils import (
     get_id_from_list,
     resolve_id
 )
+from index import index_json_graph
 import networkx as nx
 from functools import partial
 from itertools import chain, starmap, product
@@ -125,15 +126,15 @@ def audit_graph_schema():
 
 
     if len(audit_failures) == 0:
-        print(f"Graph is compliant with schema. Audited {audited_entities:,} entities with {audited_properties:,} properties.")
+        print(f"Graph is schema-compliant. Audited {audited_entities:,} entities with {audited_properties:,} properties.")
     else:
         print("\n\n".join(audit_failures))
 
-
 def main():
-        build_accepted_values_index()
-        build_property_index()
-        audit_graph_schema()
+    index_json_graph("./graph")
+    build_accepted_values_index()
+    build_property_index()
+    audit_graph_schema()
 
 if __name__ == "__main__":
     main()

@@ -86,5 +86,12 @@
     "brother": "zaifeng",
     "father": "yixuan",
     "mother": "cuiyan"
+  },
+  {
+    "@id": "edward_creasy",
+    "@type": "person",
+    "first_name": "Edward",
+    "middle_name": "Shepherd",
+    "last_name": "Creasy"
   }
 ]
