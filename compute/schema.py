@@ -32,6 +32,7 @@ def get_accepted_values(type, schema):
 
     return list(set(flat(paths)))
 
+# This could maybe be deprecated
 def write_accepted_values_index():
     schema = read_json("./graph/meta/schema.jsonx")
     accepted_values = build_accepted_values_index(schema)
@@ -55,6 +56,7 @@ def list_type_properties(type, schema, properties=[]):
 def flat_dict_list(dl):
     return {k: v for d in dl for k, v in d.items()}
 
+# This could maybe be deprecated
 def write_property_index():
     schema = read_json("./graph/meta/schema.jsonx")
     property_index = build_property_index(schema)
@@ -72,21 +74,6 @@ def build_property_index(schema):
                 all_accepted_properties[k] = accepted_values[all_accepted_properties[k]]
         property_index[xtype["@id"]] = all_accepted_properties
     return property_index
-
-# RENAME THIS AND REDUCE ARG number
-# No idea what it does
-def audit_value_type_compliance(graph, entity, entity_key, value, expected_type, audit_failures):
-    try:
-        pointed_entity = graph.resolve_id(value)
-        assert pointed_entity["@type"] in expected_type
-    except KeyError:
-        audit_failures.append(
-           f'Entity: "{entity["@id"]}" points to unknown entity "{value}". Expected @type: "{expected_type}".'
-        )
-    except AssertionError:
-        audit_failures.append(
-           f'Entity: "{entity["@id"]}" property "{entity_key}" points to entity of @type "{pointed_entity["@type"]}". Expected @type: "{expected_type}".'
-        )
 
 def audit_graph_schema_json():
     graph_fns = glob.glob("./graph/*.json")
@@ -182,58 +169,6 @@ class GraphAuditer:
                f'Entity @id: "{entity_id}" property: "{property_key}" points to entity of @type: "{pointed_entity["@type"]}". Expected an entity of @type: {accepted_value_types_formatted}.'
             )
             return
-
-
-def audit_graph_schema(property_index, graph, verbose=False):
-
-    default_data_keys = ["@id", "@type"]
-    leaf_types = ["string", "number", "date"]
-
-    audit_failures = []
-
-    audited_entities = 0
-    audited_properties = 0
-
-    for entity in graph.entities:
-        audited_entities += 1
-        audited_properties += len(entity.keys())
-        try:
-            expected_properties = property_index[entity["@type"]]
-        except KeyError:
-             audit_failures.append(
-                f'Schema has no @type: {entity["@type"]}'
-             )
-             continue
-
-        try:
-            key_difference = set(entity.keys()).difference(list(expected_properties.keys()) + default_keys)
-            assert len(key_difference) == 0
-        except AssertionError:
-            audit_failures.append(
-               f'Entity: {entity["@id"]} has unrecognised key(s): {", ".join(list(key_difference))}'
-            )
-            continue
-        ### - start moving to class from here
-
-        for entity_key in entity.keys():
-            if entity_key not in default_keys:
-                # resolve id and get type
-                expected_type = expected_properties[entity_key]
-                value_content = entity[entity_key]
-                if expected_type not in leaf_types:
-                    if type(value_content) is list:
-                        for value in value_content:
-                            audit_value_type_compliance(graph, entity, entity_key, value, expected_type, audit_failures)
-                    else:
-                        audit_value_type_compliance(graph, entity, entity_key, value_content, expected_type, audit_failures)
-
-    if verbose:
-        if len(audit_failures) == 0:
-            print(f"Graph is schema-compliant. Audited {audited_entities:,} entities with {audited_properties:,} properties.")
-        else:
-            print("\n\n".join(audit_failures))
-
-    return audit_failures
 
 def gen_data_for_type(type, property_index):
     expected_properties = property_index[type["@id"]]

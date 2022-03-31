@@ -5,7 +5,6 @@ from compute.schema import (
     get_accepted_values,
     build_accepted_values_index,
     build_property_index,
-    audit_graph_schema,
     gen_data,
     GraphAuditer
 )
