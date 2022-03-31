@@ -65,6 +65,8 @@ For automated testing - the thing should be flagged as a compute snippet and mus
 - Audit for shadowed inherited properties
 - Audit for duplicated entity IDs
 
+- figure out how to package this and use in any project directory 
+
 #### 30-03-2022
 Zaifen family tree & email templates x
 

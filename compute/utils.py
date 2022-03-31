@@ -37,6 +37,13 @@ class Graph:
     def resolve_id(self, id):
         return get_id_from_list(id, self.entities)
 
+
+def catch_single_val(val):
+    if not isinstance(val, list):
+        val = [val]
+    return val
+
+
 def parse_date(date: str):
     date_patterns = ["%Y", "%d-%m-%Y", "%d-%m-%Y %H:%M:%S"]
     if date == "thepast":

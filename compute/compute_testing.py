@@ -4,7 +4,8 @@ from person import (
     compose_email_to_person_older_than_25
 )
 from author_list import (
-    author_affiliation_text
+    author_affiliation_text,
+    create_affiliation_text_from_university_department
 )
 from utils import (
     Graph,
@@ -15,9 +16,14 @@ from schema import (
 )
 
 class ComputeTester:
-    def __init__(self, schema, funcs):
+    def __init__(self, schema):
         self.schema = schema
-        self.funcs = funcs
+        self.funcs = [
+            format_person_name_first_last,
+            compose_email_to_person_older_than_25,
+            author_affiliation_text,
+            create_affiliation_text_from_university_department
+        ]
         entities = gen_data(schema)
         self.graph = Graph(entities=entities)
         self.audit_failures = []
@@ -30,7 +36,7 @@ class ComputeTester:
 
         if verbose:
             if len(self.audit_failures) == 0:
-                print(f"All functions are schema-compliant. Audited {self.audit_functions:,} function.")
+                print(f"Functions are schema-compliant. Audited {self.audit_functions:,} function.")
             else:
                 print("\n".join(self.audit_failures))
 
@@ -60,18 +66,3 @@ class ComputeTester:
             return True
         except AssertionError:
             self.audit_failures.append(f'Function: "{func.__name__}" @id parameter @type: "{id_param}" is not present in schema.')
-
-
-def main():
-    compute_snippets = [
-        format_person_name_first_last,
-        compose_email_to_person_older_than_25,
-        author_affiliation_text
-    ]
-
-    schema = read_json("./graph/meta/schema.jsonx")
-    tester = ComputeTester(schema=schema, funcs=compute_snippets)
-    tester.audit_snippets(verbose=True)
-
-if __name__ == "__main__":
-    main()

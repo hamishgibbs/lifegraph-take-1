@@ -99,9 +99,9 @@ class GraphAuditer:
             self.audited_entities += 1
             self.audited_properties += len(entity.keys())
 
-            self.check_entity_type_exists_in_schema(type=entity["@type"])
-            self.check_entity_has_only_known_properties(entity=entity)
-            self.check_entity_property_values(entity=entity)
+            if self.check_entity_type_exists_in_schema(type=entity["@type"]):
+                if self.check_entity_has_only_known_properties(entity=entity):
+                    self.check_entity_property_values(entity=entity)
 
         if verbose:
             if len(self.audit_failures) == 0:
@@ -114,6 +114,7 @@ class GraphAuditer:
     def check_entity_type_exists_in_schema(self, type):
         try:
             self.property_index[type]
+            return True
         except KeyError:
              self.audit_failures.append(f'Schema has no @type: "{type}"')
 
@@ -123,6 +124,7 @@ class GraphAuditer:
         try:
             key_difference = set(entity.keys()).difference(expected_properties)
             assert len(key_difference) == 0
+            return True
         except AssertionError:
             key_difference = ", ".join([f'"{x}"' for x in key_difference])
             self.audit_failures.append(f'Entity @id: "{entity["@id"]}" has unrecognised property(ies): {key_difference}')
@@ -191,12 +193,3 @@ def gen_data(schema):
         graph.append(gen_data_for_type(xtype, property_index))
 
     return json.loads(json.dumps(graph, sort_keys=True, indent=4))
-
-def main():
-    index_json_graph("./graph")
-    write_accepted_values_index()
-    write_property_index()
-    audit_graph_schema_json()
-
-if __name__ == "__main__":
-    main()

@@ -17,7 +17,7 @@
     "@id": "university_department",
     "@parent": "organisation",
     "properties": {
-      "parent_organisation": "university"
+      "university": "university"
     }
   },
   {
@@ -47,7 +47,7 @@
   {
     "@id": "affiliation",
     "properties": {
-      "organisation": "organisation",
+      "organisation": "university_department",
       "start": "date",
       "end": "date"
     }

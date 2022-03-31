@@ -1,6 +1,7 @@
 from utils import (
     read_json,
     daterange_includes_now_parsed,
+    catch_single_val,
     flat
 )
 
@@ -21,33 +22,29 @@ def write_author_affiliation_text_to_html(author_list, graph):
     with open("output/author_affiliation_text.html", "w") as f:
         f.write(text)
 
+def create_affiliation_text_from_university_department(affiliation, graph):
+    affiliation = graph.resolve_id(affiliation)
+    child_org = graph.resolve_id(affiliation["organisation"])
+
+    university = graph.resolve_id(child_org["university"])
+    affiliation_text = f'{child_org["name"]}, {university["name"]}, {university["city"]}, {university["country"]}.'
+
+    return affiliation_text
+
 def author_affiliation_text(author_list, graph): # author_list
     author_list = graph.resolve_id(author_list)
 
     content = []
 
-    # This is a hack for now - automated testing or a different approach should handle if id properties are single or multiple
-    # So that it is certain that if a function passes an automated test, it will pass with a full schema
-    if not isinstance(author_list["authors"], list):
-        author_list["authors"] = [author_list["authors"]]
-
-    for person in author_list["authors"]:
+    for person in catch_single_val(author_list["authors"]):
         person = graph.resolve_id(person)
         name_formatted = f'{person["first_name"]} {person["last_name"]}'
         affiliations = []
 
-        if not isinstance(person["affiliation"], list):
-            person["affiliation"] = [person["affiliation"]]
-
-        for child_org in person["affiliation"]:
-            affiliation = graph.resolve_id(child_org)
-            child_org = graph.resolve_id(affiliation["organisation"])
+        for affiliation in catch_single_val(person["affiliation"]):
+            affiliation = graph.resolve_id(affiliation)
             if daterange_includes_now_parsed(**affiliation):
-                if "parent_organisation" in child_org.keys():
-                    parent = graph.resolve_id(child_org["parent_organisation"])
-                    affiliation_text = f'{child_org["name"]}, {parent["name"]}, {parent["city"]}, {parent["country"]}.'
-                else:
-                    affiliation_text = f'{child_org["name"]}, {child_org["city"]}, {child_org["country"]}.'
+                affiliation_text = create_affiliation_text_from_university_department(affiliation, graph)
                 affiliations.append(affiliation_text)
         content.append((name_formatted, affiliations))
 
