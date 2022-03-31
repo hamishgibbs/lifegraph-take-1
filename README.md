@@ -60,6 +60,7 @@ For automated testing - the thing should be flagged as a compute snippet and mus
 
 - run the compute snippets against the generated data and check for failure x
 - if no failure - this snippet will still work with current schema x
+- run automated test where keys are either singular or multiple
 
 - Audit for shadowed inherited properties
 - Audit for duplicated entity IDs

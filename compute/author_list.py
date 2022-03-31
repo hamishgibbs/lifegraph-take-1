@@ -1,6 +1,5 @@
 from utils import (
     read_json,
-    resolve_id,
     daterange_includes_now_parsed,
     flat
 )
@@ -17,21 +16,35 @@ def which_match(l1, l2):
         res.append([i for i, x in enumerate(l2) if i1 == x][0])
     return res
 
-def author_affiliation_text(id): # author_list
-    author_list = resolve_id(id)
+def write_author_affiliation_text_to_html(author_list, graph):
+    text = author_affiliation_text(author_list, graph)
+    with open("output/author_affiliation_text.html", "w") as f:
+        f.write(text)
+
+def author_affiliation_text(author_list, graph): # author_list
+    author_list = graph.resolve_id(author_list)
 
     content = []
 
+    # This is a hack for now - automated testing or a different approach should handle if id properties are single or multiple
+    # So that it is certain that if a function passes an automated test, it will pass with a full schema
+    if not isinstance(author_list["authors"], list):
+        author_list["authors"] = [author_list["authors"]]
+
     for person in author_list["authors"]:
-        person = resolve_id(person)
+        person = graph.resolve_id(person)
         name_formatted = f'{person["first_name"]} {person["last_name"]}'
         affiliations = []
+
+        if not isinstance(person["affiliation"], list):
+            person["affiliation"] = [person["affiliation"]]
+
         for child_org in person["affiliation"]:
-            affiliation = resolve_id(child_org)
-            child_org = resolve_id(affiliation["organisation"])
+            affiliation = graph.resolve_id(child_org)
+            child_org = graph.resolve_id(affiliation["organisation"])
             if daterange_includes_now_parsed(**affiliation):
                 if "parent_organisation" in child_org.keys():
-                    parent = resolve_id(child_org["parent_organisation"])
+                    parent = graph.resolve_id(child_org["parent_organisation"])
                     affiliation_text = f'{child_org["name"]}, {parent["name"]}, {parent["city"]}, {parent["country"]}.'
                 else:
                     affiliation_text = f'{child_org["name"]}, {child_org["city"]}, {child_org["country"]}.'
@@ -50,8 +63,8 @@ def author_affiliation_text(id): # author_list
         affiliations.append(f'<sup>{i+1}</sup>{affiliation}')
 
     text = ", ".join(authors) + "</br></br>" + "</br>".join(affiliations)
-    with open("output/author_affiliation_text.html", "w") as f:
-        f.write(text)
+
+    return text
 
 
 def main():

@@ -1,6 +1,10 @@
+import traceback
 from person import (
     format_person_name_first_last,
     compose_email_to_person_older_than_25
+)
+from author_list import (
+    author_affiliation_text
 )
 from utils import (
     Graph,
@@ -47,7 +51,7 @@ class ComputeTester:
             try:
                 func(**args)
             except Exception as e:
-                self.audit_failures.append(f"Function: {func.__name__} does not comply with schema. Error message: {str(e)}.")
+                self.audit_failures.append(f'Function: "{func.__name__}" does not comply with schema. Error message: "{str(e)}".')
 
     def check_id_param_is_recognised_type(self, func, id_param):
         graph_types = [x["@id"] for x in self.schema]
@@ -55,13 +59,14 @@ class ComputeTester:
             assert id_param in graph_types
             return True
         except AssertionError:
-            self.audit_failures.append(f"Function: {func.__name__} @id parameter @type: {id_param} is not present in schema.")
+            self.audit_failures.append(f'Function: "{func.__name__}" @id parameter @type: "{id_param}" is not present in schema.')
 
 
 def main():
     compute_snippets = [
         format_person_name_first_last,
-        compose_email_to_person_older_than_25
+        compose_email_to_person_older_than_25,
+        author_affiliation_text
     ]
 
     schema = read_json("./graph/meta/schema.jsonx")
