@@ -8,15 +8,30 @@ def read_json(fn):
 def get_id_from_list(id, l):
     res = [x for x in l if x["@id"] == id]
     try:
-        assert len(res) == 1
+        assert not len(res) < 1
     except AssertionError:
-        raise Exception(f"Found multiple ids: {id}.")
+        raise AssertionError(f'Could not find id: "{id}".')
+
+    try:
+        assert not len(res) > 1
+    except AssertionError:
+        raise AssertionError(f'Found multiple ids: "{id}".')
+
     return res[0]
 
+# This should be deprecated in compute and substituted for Graph.resolve_id
 def resolve_id(id):
     index = read_json("./graph/meta/index.jsonx")
     entities = read_json(f"./graph/{index[id]}.json")
     return get_id_from_list(id, entities)
+
+class Graph:
+    def __init__(self, entities):
+        # Option here to load from JSON files or anything else (`load_json_graph("path/*.json")`)
+        self.entities = entities
+
+    def resolve_id(self, id):
+        return get_id_from_list(id, self.entities)
 
 def parse_date(date: str):
     date_patterns = ["%Y", "%d-%m-%Y", "%d-%m-%Y %H:%M:%S"]

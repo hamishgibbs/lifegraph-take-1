@@ -32,12 +32,12 @@
     ],
     "organisation": [
         "university_department",
-        "organisation",
-        "empire",
         "chemistry_department",
         "university",
+        "city_state",
         "alliance",
-        "city_state"
+        "organisation",
+        "empire"
     ],
     "person": [
         "person"
@@ -49,7 +49,7 @@
         "university"
     ],
     "university_department": [
-        "chemistry_department",
-        "university_department"
+        "university_department",
+        "chemistry_department"
     ]
 }
