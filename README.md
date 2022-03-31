@@ -58,6 +58,7 @@ For automated testing - the thing should be flagged as a compute snippet and mus
 - gen arbitrary data
 - run the compute snippets against the generated data and check for failure
 - if no failure - this snippet will still work with current schema
+- with genned data - unit test graph audit
 
 Audit for shadowed inherited properties
 Audit for duplicated entity IDs
