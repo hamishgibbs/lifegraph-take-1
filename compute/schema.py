@@ -155,7 +155,7 @@ class GraphAuditer:
                     value_content = [value_content]
 
                 for property_value in value_content:
-                    if property_value not in self.leaf_types:
+                    if accepted_value_types not in self.leaf_types:
                         self.check_property_value_points_to_expected_type(
                             entity_id=entity["@id"],
                             property_key=property_name,
@@ -175,7 +175,6 @@ class GraphAuditer:
                f'Entity @id: "{entity_id}" property: "{property_key}" points to unknown entity @id: "{property_value}". Expected an entity of @type: {accepted_value_types_formatted}.'
             )
             return
-
         try:
             assert pointed_entity["@type"] in accepted_value_types
         except AssertionError:

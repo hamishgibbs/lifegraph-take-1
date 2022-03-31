@@ -21,8 +21,8 @@
         "city_state"
     ],
     "creative_work": [
-        "book",
-        "creative_work"
+        "creative_work",
+        "book"
     ],
     "email_template": [
         "email_template"
@@ -31,13 +31,13 @@
         "empire"
     ],
     "organisation": [
-        "university_department",
-        "chemistry_department",
+        "empire",
         "university",
-        "city_state",
         "alliance",
         "organisation",
-        "empire"
+        "university_department",
+        "city_state",
+        "chemistry_department"
     ],
     "person": [
         "person"
