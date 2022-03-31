@@ -5,8 +5,8 @@ from utils import (
     read_json,
     flat,
     get_id_from_list,
-    resolve_id,
-    Graph
+    Graph,
+    read_graph_entities_json
 )
 from index import index_json_graph
 import networkx as nx
@@ -76,13 +76,9 @@ def build_property_index(schema):
     return property_index
 
 def audit_graph_schema_json():
-    graph_fns = glob.glob("./graph/*.json")
+    entities = read_graph_entities_json("./graph/*.json")
     schema = read_json("./graph/meta/schema.jsonx")
 
-    entities = []
-    for fn in graph_fns:
-        entities.append(read_json(fn))
-    entities = flat(entities)
     graph = Graph(entities=entities)
 
     auditer = GraphAuditer(schema=schema, graph=graph)

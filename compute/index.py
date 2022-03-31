@@ -3,6 +3,7 @@ import glob
 import json
 from utils import read_json
 
+# I think this can be retired - have gone for an even less scalable solution lol
 def index_json_graph(path):
     """Create a search index for JSON entities"""
     # This solution is OK for now but not scalable

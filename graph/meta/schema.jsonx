@@ -33,6 +33,7 @@
       "first_name": "string",
       "middle_name": "string",
       "last_name": "string",
+      "age": "number",
       "email": "string",
       "orcid": "string",
       "affiliation": "affiliation",

@@ -1,6 +1,5 @@
 import sys
 from utils import (
-    resolve_id,
     parse_date,
     flat
 )
@@ -81,6 +80,18 @@ def create_family_tree(people):
     net.set_edge_smooth('dynamic')
     net.from_nx(G)
     net.show("./output/create_family_tree.html")
+
+def format_person_name_first_last(person, graph):
+    person = graph.resolve_id(person)
+    return f'{person["first_name"]} {person["last_name"]}'
+
+def compose_email_to_person_older_than_25(person, graph):
+    person = graph.resolve_id(person)
+
+    if person["age"] > 25:
+        return "an email"
+    else:
+        return "no email"
 
 def main():
     # resume_brief_summary("hamishgibbs")

@@ -1,4 +1,5 @@
 import json
+import glob
 from astropy.time import Time
 
 def read_json(fn):
@@ -19,11 +20,14 @@ def get_id_from_list(id, l):
 
     return res[0]
 
-# This should be deprecated in compute and substituted for Graph.resolve_id
-def resolve_id(id):
-    index = read_json("./graph/meta/index.jsonx")
-    entities = read_json(f"./graph/{index[id]}.json")
-    return get_id_from_list(id, entities)
+def read_graph_entities_json(path):
+    graph_fns = glob.glob(path)
+
+    entities = []
+    for fn in graph_fns:
+        entities.append(read_json(fn))
+
+    return flat(entities)
 
 class Graph:
     def __init__(self, entities):
