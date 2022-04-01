@@ -82,7 +82,6 @@
     "@id": "zaitian",
     "@type": "person",
     "first_name": "Zaitian",
-    "official_title": "Guangxu Emperor",
     "brother": "zaifeng",
     "father": "yixuan",
     "mother": "cuiyan"
@@ -97,13 +96,58 @@
   {
     "@id": "darius_1",
     "@type": "person",
-    "first_name": "Darius I",
-    "official_title": "Emperor"
+    "first_name": "Darius I"
   },
   {
     "@id": "alexander_the_great",
     "@type": "person",
-    "first_name": "Alexander The Great",
-    "official_title": "Emperor"
+    "first_name": "Alexander The Great"
+  },
+  {
+    "@id": "hannibal",
+    "@type": "person",
+    "first_name": "Hannibal"
+  },
+  {
+    "@id": "marcus_livius",
+    "@type": "person",
+    "first_name": "Marcus",
+    "last_name": "Livius"
+  },
+  {
+    "@id": "gaius_claudius_nero",
+    "@type": "person",
+    "first_name": "Gaius",
+    "middle_name": "Claudis",
+    "last_name": "Nero"
+  },
+  {
+    "@id": "augustus_caesar",
+    "@type": "person",
+    "first_name": "Augustus"
+  },
+  {
+    "@id": "arminius",
+    "@type": "person",
+    "first_name": "Arminius"
+  },
+  {
+    "@id": "tetricus_1",
+    "@type": "person",
+    "first_name": "Gaius",
+    "middle_name": ["Pius", "Esuvius"],
+    "last_name": "Tetricus"
+  },
+  {
+    "@id": "hisham",
+    "@type": "person",
+    "first_name": "Hisham",
+    "last_name": "ibn Abd al-Malik"
+  },
+  {
+    "@id": "charles_martel",
+    "@type": "person",
+    "first_name": "Charles",
+    "last_name": "Martel"
   }
 ]

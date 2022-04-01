@@ -3,6 +3,7 @@
         "@id": "alexander_tenure",
         "@type": "tenure",
         "person": "alexander_the_great",
+        "official_title": "Emperor",
         "start": "336 BC",
         "end": "323 BC"
     },
@@ -10,7 +11,78 @@
         "@id": "darius_1_tenure",
         "@type": "tenure",
         "person": "darius_1",
+        "official_title": "Emperor",
         "start": "522 BC",
         "end": "486 BC"
+    },
+    {
+        "@id": "hannibal_tenure",
+        "@type": "tenure",
+        "person": "hannibal",
+        "official_title": "General",
+        "start": "221 BC",
+        "end": "202 BC"
+    },
+    {
+        "@id": "zaitian_tenure",
+        "@type": "tenure",
+        "person": "zaitian",
+        "official_title": "Guangxu Emperor"
+    },
+    {
+        "@id": "marcus_livius_second_tenure",
+        "@type": "tenure",
+        "person": "marcus_livius",
+        "official_title": "Consul",
+        "start": "207 BC",
+        "end": "206 BC"
+    },
+    {
+        "@id": "gaius_claudius_nero_tenure",
+        "@type": "tenure",
+        "person": "gaius_claudius_nero",
+        "official_title": "Consul",
+        "start": "207 BC",
+        "end": "206 BC"
+    },
+    {
+        "@id": "augustus_tenure",
+        "@type": "tenure",
+        "person": "augustus_caesar",
+        "official_title": "Caesar",
+        "start": "27 BC",
+        "end": "14 AD"
+    },
+    {
+        "@id": "arminius_tenure",
+        "@type": "tenure",
+        "person": "arminius",
+        "official_title": "Chieftan",
+        "start": "9 AD",
+        "end": "14 AD"
+    },
+    {
+        "@id": "tetricus_1_tenure",
+        "@type": "tenure",
+        "person": "tetricus_1",
+        "official_title": "Emperor",
+        "start": "271 AD",
+        "end": "274 AD"
+    },
+    {
+        "@id": "hisham_tenure",
+        "@type": "tenure",
+        "person": "hisham",
+        "official_title": "Caliph",
+        "start": "724 AD",
+        "end": "743 AD"
+    },
+    {
+        "@id": "charles_martel_tenure",
+        "@type": "tenure",
+        "person": "charles_martel",
+        "official_title": "Duke and Prince of the Franks",
+        "start": "718 AD",
+        "end": "741 AD"
     }
 ]

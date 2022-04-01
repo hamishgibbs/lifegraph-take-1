@@ -81,6 +81,7 @@
     "@id": "battle",
     "properties": {
       "name": "string",
+      "alternative_name": "string",
       "date": "string",
       "belligerents": "organisation",
       "referenced_in": "book"
@@ -90,14 +91,15 @@
     "@id": "alliance",
     "@parent": "organisation",
     "properties": {
-      "member": "organisation"
+      "member": "organisation",
+      "leader": "tenure"
     }
   },
   {
     "@id": "empire",
     "@parent": "organisation",
     "properties": {
-      "ruler": "tenure"
+      "leader": "tenure"
     }
   },
   {
@@ -111,6 +113,7 @@
     "@id": "tenure",
     "properties": {
       "person": "person",
+      "official_title": "string",
       "start": "date",
       "end": "date"
     }
@@ -121,6 +124,14 @@
       "link": "string",
       "description": "string",
       "date_added": "date"
+    }
+  },
+  {
+    "@id": "republic",
+    "@parent": "organisation",
+    "properties": {
+      "name": "string",
+      "leader": "tenure"
     }
   }
 ]

@@ -3,7 +3,7 @@
     "@id": "achaemenid_empire",
     "@type": "empire",
     "name": "Achaemenid Empire",
-    "ruler": [
+    "leader": [
       "darius_1_tenure"
     ]
   },
@@ -11,8 +11,50 @@
     "@id": "macedonian_empire",
     "@type": "empire",
     "name": "Macedonia",
-    "ruler": [
+    "leader": [
       "alexander_tenure"
     ]
+  },
+  {
+    "@id": "carthaginian_empire",
+    "@type": "empire",
+    "name": "Carthage",
+    "leader": [
+      "hannibal_tenure"
+    ]
+  },
+  {
+    "@id": "roman_empire",
+    "@type": "empire",
+    "name": "Rome",
+    "leader": [
+      "augustus_tenure"
+    ]
+  },
+  {
+    "@id": "gallic_empire",
+    "@type": "empire",
+    "name": "Gallic Empire",
+    "leader": [
+      "tetricus_1_tenure"
+    ]
+  },
+  {
+    "@id": "umayyad_empire",
+    "@type": "empire",
+    "name": "Umayyad Caliphate",
+    "leader": [
+      "hisham_tenure"
+    ]
+  },
+  {
+    "@id": "kingdom_of_the_franks",
+    "@type": "empire",
+    "name": "Kingdom of the Franks"
+  },
+  {
+    "@id": "duchy_of_acquitaine",
+    "@type": "empire",
+    "name": "Duchy of Aquitaine"
   }
 ]

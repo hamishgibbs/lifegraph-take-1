@@ -28,15 +28,16 @@
     "@type": "battle",
     "name": "The Battle of Metaurus",
     "date": "207 BC",
-    "belligerents": [],
+    "belligerents": ["roman_republic", "carthaginian_empire"],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
     "@id": "battle_arminius",
     "@type": "battle",
     "name": "Victory of Arminius Over the Roman Legions",
+    "alternative_name": ["Battle of the Teutoburg Forest"],
     "date": "9 AD",
-    "belligerents": [],
+    "belligerents": ["teutoburg_germanic_alliance", "roman_empire"],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
@@ -44,15 +45,16 @@
     "@type": "battle",
     "name": "Battle of Chalons",
     "date": "451 AD",
-    "belligerents": [],
+    "belligerents": ["roman_empire", "gallic_empire"],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {
     "@id": "battle_tours",
     "@type": "battle",
     "name": "Battle of Tours",
+    "alternative_name": ["Battle of Poitiers", "Battle of the Highway of the Martyrs"],
     "date": "732 AD",
-    "belligerents": [],
+    "belligerents": ["frankish_alliance", "umayyad_empire"],
     "referenced_in": ["fifteen_decisive_battles"]
   },
   {

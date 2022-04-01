@@ -2,6 +2,20 @@
     {
         "@id": "marathon_greek_alliance",
         "@type": "alliance",
+        "name": "Greek Alliance of Athens and Plataea",
         "member": ["athens", "plataea"]
+    },
+    {
+        "@id": "teutoburg_germanic_alliance",
+        "@type": "alliance",
+        "name": "Germanic Alliance",
+        "leader": "arminius_tenure"
+    },
+    {
+        "@id": "frankish_alliance",
+        "@type": "alliance",
+        "name": "Frankish Alliance",
+        "member": ["kingdom_of_the_franks", "duchy_of_acquitaine"],
+        "leader": "charles_martel_tenure"
     }
 ]

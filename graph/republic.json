@@ -1,0 +1,11 @@
+[
+  {
+    "@id": "roman_republic",
+    "@type": "republic",
+    "name": "Roman Republic",
+    "leader": [
+      "marcus_livius_second_tenure",
+      "gaius_claudius_nero_tenure"
+    ]
+  }
+]
