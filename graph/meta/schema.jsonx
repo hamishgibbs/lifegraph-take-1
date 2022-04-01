@@ -114,5 +114,13 @@
       "start": "date",
       "end": "date"
     }
+  },
+  {
+    "@id": "cool_link",
+    "properties": {
+      "link": "string",
+      "description": "string",
+      "date_added": "date"
+    }
   }
 ]

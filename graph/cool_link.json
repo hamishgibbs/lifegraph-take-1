@@ -1,0 +1,20 @@
+[
+    {
+        "@id": "gibbs_tree_site",
+        "@type": "cool_link",
+        "link": "https://gibbsfamilytree.com/",
+        "date_added": "31-03-2022"
+    },
+    {
+        "@id": "weird_japan_history_video",
+        "@type": "cool_link",
+        "link": "https://www.youtube.com/watch?v=Mh5LY4Mz15o&ab_channel=billwurtz",
+        "date_added": "31-03-2022"
+    },
+    {
+        "@id": "weird_world_history_video",
+        "@type": "cool_link",
+        "link": "https://www.youtube.com/watch?v=xuCn8ux2gbs&ab_channel=billwurtz",
+        "date_added": "31-03-2022"
+    }
+]

@@ -8,7 +8,6 @@ from utils import (
     Graph,
     read_graph_entities_json
 )
-from index import index_json_graph
 import networkx as nx
 from astropy.time import Time
 

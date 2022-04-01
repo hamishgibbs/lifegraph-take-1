@@ -24,6 +24,7 @@ Some ideas:
   * Citations & literature review
   * Literature groups
   * Data collection for projects (like agriculture)
+  * Mythology
 
 **Computed Data**
   * Author affiliation statement x
@@ -37,6 +38,10 @@ Some ideas:
       * click b for transcript pertaining to b
     * Train model to detect topic after a few labellings
   * Investigations through data
+  * Retelling of Greek and Roman stories (and comparison between)
+  * vis of entire graph
+  * models to extract facts
+  * Tag emails, chats, meeting minutes with "topics" and generate summaries about your information on specific topics
 
 ### Ideas
 
@@ -69,7 +74,10 @@ For automated testing - the thing should be flagged as a compute snippet and mus
 
 #### 30-03-2022
 Zaifen family tree & email templates x
+Story about 15 battles
 
 #### Notes
 Pretty fucking cool.
 It is very easy to update broken code after schema changes and get it working with new schema
+
+Don't completely trust the automated testing yet but is it pretty cool
