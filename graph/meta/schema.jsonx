@@ -6,6 +6,14 @@
     }
   },
   {
+    "@id": "event",
+    "properties": {
+      "name": "string",
+      "start": "date",
+      "end": "date"
+    }
+  },
+  {
     "@id": "university",
     "@parent": "organisation",
     "properties": {
@@ -36,7 +44,7 @@
       "age": "number",
       "email": "string",
       "orcid": "string",
-      "affiliation": "affiliation",
+      "tenure": "tenure",
       "father": "person",
       "mother": "person",
       "brother": "person",
@@ -113,7 +121,8 @@
     "@id": "tenure",
     "properties": {
       "person": "person",
-      "official_title": "string",
+      "organisation": "organisation",
+      "title": "string",
       "start": "date",
       "end": "date"
     }
@@ -133,5 +142,33 @@
       "name": "string",
       "leader": "tenure"
     }
+  },
+  {
+    "@id": "academic_conference",
+    "@parent": "event",
+    "properties": {
+      "sub_event": "event",
+      "topic": "string"
+    }
+  },
+  {
+    "@id": "presentation",
+    "@parent": "event",
+    "properties": {
+      "presenting_person": "person",
+      "presenting_organisation": "organisation"
+    }
+  },
+  {
+    "@id": "attendance",
+    "properties": {
+      "event": "event",
+      "person": "person"
+    }
+  },
+  {
+    "@id": "company",
+    "@parent": "organisation",
+    "properties": {}
   }
 ]

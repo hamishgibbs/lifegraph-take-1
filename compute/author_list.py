@@ -41,7 +41,7 @@ def author_affiliation_text(author_list, graph): # author_list
         name_formatted = f'{person["first_name"]} {person["last_name"]}'
         affiliations = []
 
-        for affiliation in catch_single_val(person["affiliation"]):
+        for affiliation in catch_single_val(person["tenure"]):
             affiliation = graph.resolve_id(affiliation)
             if daterange_includes_now_parsed(**affiliation):
                 affiliation_text = create_affiliation_text_from_university_department(affiliation, graph)

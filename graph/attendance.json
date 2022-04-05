@@ -1,0 +1,44 @@
+[
+  {
+    "@id": "hamish_gisruk_2022",
+    "@type": "attendance",
+    "event": "gisruk_2022",
+    "person": "hamishgibbs"
+  },
+  {
+    "@id": "louiseseig_gisruk_2022",
+    "@type": "attendance",
+    "event": "gisruk_2022",
+    "person": "louiseseig"
+  },
+  {
+    "@id": "shunyakimura_gisruk_2022",
+    "@type": "attendance",
+    "event": "gisruk_2022",
+    "person": "shunyakimura"
+  },
+  {
+    "@id": "jasontang_gisruk_2022",
+    "@type": "attendance",
+    "event": "gisruk_2022",
+    "person": "jasontang"
+  },
+  {
+    "@id": "abigailhill_gisruk_2022",
+    "@type": "attendance",
+    "event": "gisruk_2022",
+    "person": "abigailhill"
+  },
+  {
+    "@id": "nickbearman_gisruk_2022",
+    "@type": "attendance",
+    "event": "gisruk_2022",
+    "person": "abigailhill"
+  },
+  {
+    "@id": "jamescheshire_gisruk_2022",
+    "@type": "attendance",
+    "event": "gisruk_2022",
+    "person": "abigailhill"
+  }
+]

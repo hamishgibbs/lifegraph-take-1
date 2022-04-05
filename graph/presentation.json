@@ -1,0 +1,33 @@
+[
+  {
+    "@id": "carto_gisruk_2022_presentation",
+    "@type": "presentation",
+    "name": "Carrying Out Cloud Native Spatial Analytics with CARTO",
+    "start": "06-04-2022 09:45",
+    "end": "06-04-2022 11:45",
+    "presenting_organisation": "carto_company"
+  },
+  {
+    "@id": "bearman_qgis_gisruk_2022_presentation",
+    "@type": "presentation",
+    "name": "Map Design in QGIS and Map Post-editing (ECR Only)",
+    "start": "06-04-2022 09:45",
+    "end": "06-04-2022 11:45",
+    "presenting_person": "nickbearman"
+  },
+  {
+    "@id": "dasymetric_qgis_gisruk_2022_presentation",
+    "@type": "presentation",
+    "name": "Dasymetric Population Modelling in R and Python",
+    "start": "06-04-2022 09:45",
+    "end": "06-04-2022 11:45"
+  },
+  {
+    "@id": "cheshire_qgis_gisruk_2022_presentation",
+    "@type": "presentation",
+    "name": "Atlas of the Invisible: Maps and Graphics That Will Change How You See the World",
+    "start": "06-04-2022 13:15",
+    "end": "06-04-2022 14:15",
+    "presenting_person": "jamescheshire"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "@id": "gisruk_2022",
+    "@type": "academic_conference",
+    "name": "GISRUK",
+    "start": "05-04-2022",
+    "end": "08-04-2022",
+    "topic": "GIS",
+    "sub_event": [
+      "carto_gisruk_2022_presentation",
+      "bearman_qgis_gisruk_2022_presentation",
+      "dasymetric_qgis_gisruk_2022_presentation",
+      "cheshire_qgis_gisruk_2022_presentation"
+    ]
+  }
+]

@@ -8,8 +8,49 @@
       "hamishgibbs@gmail.com",
       "Hamish.Gibbs@lshtm.ac.uk",
       "Hamish.Gibbs.21@ucl.ac.uk"],
-    "orcid": "0000-0003-4413-453X",
-    "affiliation": ["af0", "af1", "af2", "af3"]
+    "orcid": "0000-0003-4413-453X"
+  },
+  {
+    "@id": "louiseseig",
+    "@type": "person",
+    "first_name": "Louise",
+    "last_name": "Seig",
+    "email": "louise.sieg.16@ucl.ac.uk"
+  },
+  {
+    "@id": "shunyakimura",
+    "@type": "person",
+    "first_name": "Shunya",
+    "last_name": "Kimura",
+    "email": "shunya.kimura.18@ucl.ac.uk"
+  },
+  {
+    "@id": "jasontang",
+    "@type": "person",
+    "first_name": "Jason",
+    "last_name": "Tang",
+    "email": "jason.tang.16@ucl.ac.uk"
+  },
+  {
+    "@id": "abigailhill",
+    "@type": "person",
+    "first_name": "Abigail",
+    "last_name": "Hill",
+    "email": "abigail.hill.19@ucl.ac.uk"
+  },
+  {
+    "@id": "nickbearman",
+    "@type": "person",
+    "first_name": "Nick",
+    "last_name": "Bearman",
+    "email": "nick.bearman@ucl.ac.uk"
+  },
+  {
+    "@id": "jamescheshire",
+    "@type": "person",
+    "first_name": "James",
+    "last_name": "Cheshire",
+    "email": "james.cheshire@ucl.ac.uk"
   },
   {
     "@id": "yangliu",
@@ -17,8 +58,7 @@
     "first_name": "Yang",
     "last_name": "Liu",
     "email": "Yang.Liu@lshtm.ac.uk",
-    "orcid": "0000-0002-9368-0425",
-    "affiliation": ["af4", "af5", "af6", "af7"]
+    "orcid": "0000-0002-9368-0425"
   },
   {
     "@id": "rozeggo",
@@ -26,8 +66,7 @@
     "first_name": "Roz",
     "last_name": "Eggo",
     "email": "r.eggo@lshtm.ac.uk",
-    "orcid": "0000-0002-0362-6717",
-    "affiliation": ["af8", "af9", "af10"]
+    "orcid": "0000-0002-0362-6717"
   },
   {
     "@id": "michaelmarks",
@@ -35,8 +74,7 @@
     "first_name": "Michael",
     "last_name": "Marks",
     "email": "Michael.Marks@lshtm.ac.uk",
-    "orcid": "0000-0002-7585-4743",
-    "affiliation": ["af11", "af12", "af13"]
+    "orcid": "0000-0002-7585-4743"
   },
   {
     "@id": "zaifeng",
