@@ -3,7 +3,7 @@
 # serve any ID as a page at entities/{id}
 # return json
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from compute.utils import (
@@ -59,14 +59,35 @@ async def entity(request: Request, id: str):
     entity = transform_entity_for_rendering(entity)
     return templates.TemplateResponse("entity.html", {"request": request, "entity": entity})
 
-# store colors in graph?
+# DEV: this should change from "create" to "edit"
 @app.get("/create/{type}", response_class=HTMLResponse)
 async def create(request: Request, type: str):
-    leaf_types = ["string", "number", "date"]
-    print(schema[type])
-    return templates.TemplateResponse("create.html", {"request": request, "schema": schema[type], "leaf_types": leaf_types})
+    return templates.TemplateResponse("create.html", {
+        "request": request,
+        "schema": schema[type],
+        "type": type
+    })
 
-# create a form to fill out all properties of a type
-# if expected type is not leaf type, suggest entities to point to
-    # First - by ID only
-    # Second - Try to match a single entity by the text of a value
+
+# store type colors in graph?
+
+@app.get("/suggest_pointed_entity/{type}/{property}/")
+async def suggest_pointed_entity(type, property, q):
+    print(type, property, search_str)
+    raise Exception
+    # DEV: search through expected type for specific titles (i.e. name, title, first_name, last_name)
+    leaf_types = ["string", "number", "date"]
+    expected_pointed_types = schema[type][property]
+    print(expected_pointed_types)
+    if isinstance(expected_pointed_types, list):
+        all_candidates = [x["@id"] for x in graph.entities if x["@type"] in expected_pointed_types]
+        search_str_candidates = [x for x in all_candidates if search_str in x]
+        return JSONResponse(content=search_str_candidates)
+    else:
+        return None
+
+# not working to hit suggest_pointed_entity - need to check how $ hits for autocomplete
+
+
+# DEV: endpoint to recieve form data
+# validate that recieved form data complies with schema
