@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ entity["@id"] }}</title>
+</head>
+<body>
+  <ul id="entity">
+    {% for key in entity.keys() %}
+      {% if key not in ["@id", "@type"] %}
+        {% for value in entity[key] %}
+          {% if value["link"] %}
+            <li>{{ key }}:<a href="http://localhost:8000/entity/{{ value['value'] }}">{{ value['value'] }}</a></li>
+          {% else %}
+            <li>{{ key }} : {{ value["value"] }}</li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</body>
+</html>

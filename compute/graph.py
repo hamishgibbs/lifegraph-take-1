@@ -7,14 +7,17 @@ from utils import (
 import networkx as nx
 from pyvis.network import Network
 
-def visualise_all_graph_types(graph):
+def format_node_title_as_html_link(entity):
+    return f"<a href='http://localhost:8000/entity/{entity['@id']}'>{entity['@type']}</a>"
+
+def visualise_all_graph_data(graph):
     G = nx.DiGraph()
 
     graph_types = set([x["@type"] for x in graph.entities])
     color_map = dict(zip(graph_types, colors[:len(graph_types)]))
 
     for entity in graph.entities:
-        G.add_node(entity["@id"], color=color_map[entity["@type"]], title=entity["@type"])
+        G.add_node(entity["@id"], color=color_map[entity["@type"]], title=format_node_title_as_html_link(entity))
         for item in entity.items():
             if item[0] not in ["@id", "@type"]:
                 for value in catch_single_val(item[1]):
@@ -24,15 +27,14 @@ def visualise_all_graph_types(graph):
     net = Network(height='100%', width='100%', directed =True)
     net.set_edge_smooth('dynamic')
     net.from_nx(G)
-    net.show("./output/visualise_all_graph_types.html")
+    net.show("./output/visualise_all_graph_data.html")
 
 
 def main():
     entities = read_graph_entities_json("./graph/*.json")
-    schema = read_json("./graph/meta/schema.jsonx")
     graph = Graph(entities=entities)
 
-    visualise_all_graph_types(graph)
+    visualise_all_graph_data(graph)
 
 if __name__ == "__main__":
 

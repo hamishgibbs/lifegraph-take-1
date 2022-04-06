@@ -1,7 +1,7 @@
 import json
 import sys
 import glob
-from utils import (
+from compute.utils import (
     read_json,
     flat,
     get_id_from_list,
