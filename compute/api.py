@@ -73,20 +73,14 @@ async def create(request: Request, type: str):
 
 @app.get("/suggest_pointed_entity/{type}/{property}/")
 async def suggest_pointed_entity(type, property, q):
-    print(type, property, search_str)
-    raise Exception
-    # DEV: search through expected type for specific titles (i.e. name, title, first_name, last_name)
     leaf_types = ["string", "number", "date"]
     expected_pointed_types = schema[type][property]
-    print(expected_pointed_types)
     if isinstance(expected_pointed_types, list):
         all_candidates = [x["@id"] for x in graph.entities if x["@type"] in expected_pointed_types]
-        search_str_candidates = [x for x in all_candidates if search_str in x]
-        return JSONResponse(content=search_str_candidates)
+        q_str_candidates = [x for x in all_candidates if q in x]
+        return JSONResponse(content=q_str_candidates)
     else:
         return None
-
-# not working to hit suggest_pointed_entity - need to check how $ hits for autocomplete
 
 
 # DEV: endpoint to recieve form data
