@@ -1,0 +1,16 @@
+[
+  {
+    "@id": "meal_1",
+    "@type": "meal",
+    "person": "hamishgibbs",
+    "time": "05-04-2022 08:00",
+    "food": "marriott_buffet_english_breakfast_1"
+  },
+  {
+    "@id": "meal_2",
+    "@type": "meal",
+    "person": "hamishgibbs",
+    "time": "06-04-2022 08:00",
+    "food": "marriott_buffet_english_breakfast_2"
+  }
+]

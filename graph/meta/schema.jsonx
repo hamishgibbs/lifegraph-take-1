@@ -178,5 +178,33 @@
       "time": "date",
       "quality": "string"
     }
+  },
+  {
+  "@id": "topic",
+  "properties": {
+    "name": "string"
+    }
+  },
+  {
+  "@id": "meal",
+  "properties": {
+    "person": "person",
+    "time": "date",
+    "food": "food"
+    }
+  },
+  {
+  "@id": "food",
+  "properties": {
+    "name": "string",
+    "ingredient": "ingredient"
+    }
+  },
+  {
+  "@id": "ingredient",
+  "properties": {
+    "food": "food",
+    "quantity": "string"
+    }
   }
 ]

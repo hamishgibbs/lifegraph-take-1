@@ -5,5 +5,12 @@
     "person": "hamishgibbs",
     "time": "06-04-2022 07:30",
     "quality": "bad"
+  },
+  {
+    "@id": "hamishgibbs_bm_2",
+    "@type": "bowel_movement",
+    "person": "hamishgibbs",
+    "time": "06-04-2022 19:00",
+    "quality": "gas"
   }
 ]

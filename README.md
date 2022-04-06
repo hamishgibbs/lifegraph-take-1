@@ -25,6 +25,7 @@ Some ideas:
   * Literature groups
   * Data collection for projects (like agriculture)
   * Mythology
+  * exercise session (parsed from spreadsheet)
 
 **Computed Data**
   * Author affiliation statement x

@@ -1,0 +1,86 @@
+[
+  {
+    "@id": "marriott_buffet_english_breakfast_1",
+    "@type": "food",
+    "name": "Full English Breakfast",
+    "ingredient": [
+      "2_breakfast_sausages",
+      "1_hash_brown",
+      "10_white_mushrooms",
+      "1_croissant",
+      "6_individual_orange_slices",
+      "6_pineapple_cubes",
+      "1_blackberry_yogurt_parfait"
+    ]
+  },
+  {
+    "@id": "marriott_buffet_english_breakfast_2",
+    "@type": "food",
+    "name": "Full English Breakfast",
+    "ingredient": [
+      "2_breakfast_sausages",
+      "1_hash_brown",
+      "10_white_mushrooms",
+      "1_dinner_bread_roll",
+      "6_individual_orange_slices",
+      "6_pineapple_cubes",
+      "1_cherry_yogurt_pot"
+    ]
+  },
+  {
+    "@id": "breakfast_sausage",
+    "@type": "food",
+    "name": "Breakfast Sausage"
+  },
+  {
+    "@id": "hash_brown",
+    "@type": "food",
+    "name": "Hash Brown"
+  },
+  {
+    "@id": "white_mushroom",
+    "@type": "food",
+    "name": "White Mushroom"
+  },
+  {
+    "@id": "dinner_bread_roll",
+    "@type": "food",
+    "name": "Dinner Bread Roll"
+  },
+  {
+    "@id": "individual_orange_slices",
+    "@type": "food",
+    "name": "Individual Orange Slices"
+  },
+  {
+    "@id": "pineapple_cubes",
+    "@type": "food",
+    "name": "Pineapple Cubes"
+  },
+  {
+    "@id": "cherry_yogurt_pot",
+    "@type": "food",
+    "name": "Cherry Yogurt Pot",
+    "ingredient": ["unknown_amount_of_cherries", "1_pot_yogurt"]
+  },
+  {
+    "@id": "yogurt",
+    "@type": "food",
+    "name": "Yogurt"
+  },
+  {
+    "@id": "cherry",
+    "@type": "food",
+    "name": "Cherry"
+  },
+  {
+    "@id": "croissant",
+    "@type": "food",
+    "name": "Croissant"
+  },
+  {
+    "@id": "blackberry_yogurt_parfait",
+    "@type": "food",
+    "name": "Blackberry Yogurt Parfait"
+  }
+]

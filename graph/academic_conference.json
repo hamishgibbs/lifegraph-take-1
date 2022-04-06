@@ -5,7 +5,7 @@
     "name": "GISRUK",
     "start": "05-04-2022",
     "end": "08-04-2022",
-    "topic": "GIS",
+    "topic": "gis_topic",
     "sub_event": [
       "carto_gisruk_2022_presentation",
       "bearman_qgis_gisruk_2022_presentation",
