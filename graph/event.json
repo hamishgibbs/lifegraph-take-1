@@ -1,0 +1,16 @@
+[
+  {
+    "@id": "coffee_cake_1_gisruk_2022_presentation",
+    "@type": "event",
+    "name": "Coffee & Cakes",
+    "start": "06-04-2022 15:15",
+    "end": "06-04-2022 16:00"
+  },
+  {
+    "@id": "drinks_reception_1_gisruk_2022_presentation",
+    "@type": "event",
+    "name": "Drinks Reception @ University of Liverpool",
+    "start": "06-04-2022 17:15",
+    "end": "06-04-2022 18:45"
+  }
+]

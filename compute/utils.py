@@ -45,7 +45,7 @@ def catch_single_val(val):
 
 
 def parse_date(date: str):
-    date_patterns = ["%Y", "%d-%m-%Y", "%d-%m-%Y %H:%M:%S"]
+    date_patterns = ["%Y", "%d-%m-%Y", "%d-%m-%Y %H:%M", "%d-%m-%Y %H:%M:%S"]
     if date == "thepast":
         return Time(f"-{4713:05}-01-01T00:00:00", format="fits")
     elif date == "thefuture":

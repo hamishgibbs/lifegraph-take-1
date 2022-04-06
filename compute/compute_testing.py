@@ -7,6 +7,9 @@ from author_list import (
     author_affiliation_text,
     create_affiliation_text_from_university_department
 )
+from academic_conference import (
+    list_todays_conference_events
+)
 from utils import (
     Graph,
     read_json
@@ -22,7 +25,8 @@ class ComputeTester:
             format_person_name_first_last,
             compose_email_to_person_older_than_25,
             author_affiliation_text,
-            create_affiliation_text_from_university_department
+            create_affiliation_text_from_university_department,
+            list_todays_conference_events
         ]
         entities = gen_data(schema)
         self.graph = Graph(entities=entities)

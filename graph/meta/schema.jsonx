@@ -170,5 +170,13 @@
     "@id": "company",
     "@parent": "organisation",
     "properties": {}
+  },
+  {
+    "@id": "bowel_movement",
+    "properties": {
+      "person": "person",
+      "time": "date",
+      "quality": "string"
+    }
   }
 ]

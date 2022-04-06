@@ -16,18 +16,46 @@
     "presenting_person": "nickbearman"
   },
   {
-    "@id": "dasymetric_qgis_gisruk_2022_presentation",
+    "@id": "dasymetric_gisruk_2022_presentation",
     "@type": "presentation",
     "name": "Dasymetric Population Modelling in R and Python",
     "start": "06-04-2022 09:45",
     "end": "06-04-2022 11:45"
   },
   {
-    "@id": "cheshire_qgis_gisruk_2022_presentation",
+    "@id": "cheshire_gisruk_2022_presentation",
     "@type": "presentation",
     "name": "Atlas of the Invisible: Maps and Graphics That Will Change How You See the World",
     "start": "06-04-2022 13:15",
     "end": "06-04-2022 14:15",
     "presenting_person": "jamescheshire"
+  },
+  {
+    "@id": "urban_1_gisruk_2022_presentation",
+    "@type": "presentation",
+    "name": "Urban I",
+    "start": "06-04-2022 14:15",
+    "end": "06-04-2022 15:15"
+  },
+  {
+    "@id": "transport_gisruk_2022_presentation",
+    "@type": "presentation",
+    "name": "Transport & Mobility",
+    "start": "06-04-2022 14:15",
+    "end": "06-04-2022 15:15"
+  },
+  {
+    "@id": "spatial_demographics_gisruk_2022_presentation",
+    "@type": "presentation",
+    "name": "Spatial Demographics",
+    "start": "06-04-2022 16:00",
+    "end": "06-04-2022 17:15"
+  },
+  {
+    "@id": "methods_and_rigour_gisruk_2022_presentation",
+    "@type": "presentation",
+    "name": "Methods & Rigor",
+    "start": "06-04-2022 16:00",
+    "end": "06-04-2022 17:15"
   }
 ]
