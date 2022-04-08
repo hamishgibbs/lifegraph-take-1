@@ -3,66 +3,156 @@
     "@id": "2_breakfast_sausages",
     "@type": "ingredient",
     "food": "breakfast_sausage",
-    "quantity": "2"
+    "multiplier": 2
+  },
+  {
+    "@id": "1_breakfast_sausage",
+    "@type": "ingredient",
+    "food": "breakfast_sausage",
+    "multiplier": 1
   },
   {
     "@id": "1_hash_brown",
     "@type": "ingredient",
     "food": "hash_brown",
-    "quantity": "1"
+    "multiplier": 1
+  },
+  {
+    "@id": "1_slice_white_toast",
+    "@type": "ingredient",
+    "food": "white_toast",
+    "multiplier": 1
   },
   {
     "@id": "10_white_mushrooms",
     "@type": "ingredient",
     "food": "white_mushroom",
-    "quantity": "10"
+    "multiplier": 10
+  },
+  {
+    "@id": "6_white_mushrooms",
+    "@type": "ingredient",
+    "food": "white_mushroom",
+    "multiplier": 6
   },
   {
     "@id": "1_dinner_bread_roll",
     "@type": "ingredient",
     "food": "dinner_bread_roll",
-    "quantity": "1"
+    "multiplier": 1
   },
   {
     "@id": "6_individual_orange_slices",
     "@type": "ingredient",
     "food": "individual_orange_slices",
-    "quantity": "6"
+    "multiplier": 6
   },
   {
     "@id": "6_pineapple_cubes",
     "@type": "ingredient",
-    "food": "pineapple_cubes",
-    "quantity": "6"
+    "food": "pineapple_cube",
+    "multiplier": 6
   },
   {
     "@id": "1_cherry_yogurt_pot",
     "@type": "ingredient",
     "food": "cherry_yogurt_pot",
-    "quantity": "1"
+    "multiplier": 1
   },
   {
     "@id": "unknown_amount_of_cherries",
     "@type": "ingredient",
     "food": "cherry",
-    "quantity": "unknown"
+    "multiplier": "unknown"
   },
   {
     "@id": "1_pot_yogurt",
     "@type": "ingredient",
     "food": "yogurt",
-    "quantity": "1"
+    "multiplier": 1
   },
   {
     "@id": "1_croissant",
     "@type": "ingredient",
     "food": "croissant",
-    "quantity": "1"
+    "multiplier": 1
   },
   {
     "@id": "1_blackberry_yogurt_parfait",
     "@type": "ingredient",
     "food": "blackberry_yogurt_parfait",
-    "quantity": "1"
+    "multiplier": 1
+  },
+  {
+    "@id": "1_uk_chicken_salad_sandwich",
+    "@type": "ingredient",
+    "food": "uk_chicken_salad_sandwich",
+    "multiplier": 1
+  },
+  {
+    "@id": "1_pear",
+    "@type": "ingredient",
+    "food": "pear",
+    "multiplier": 1
+  },
+  {
+    "@id": "1_bag_potato_chips",
+    "@type": "ingredient",
+    "food": "potato_chips",
+    "multiplier": 1
+  },
+  {
+    "@id": "1_tangerine",
+    "@type": "ingredient",
+    "food": "tangerine",
+    "multiplier": 1
+  },
+  {
+    "@id": "1_chicken_bacon_sandwich",
+    "@type": "ingredient",
+    "food": "chicken_bacon_sandwich",
+    "multiplier": 1
+  },
+  {
+    "@id": "2_apples",
+    "@type": "ingredient",
+    "food": "apple",
+    "multiplier": 2
+  },
+  {
+    "@id": "7_pieces_neopolitan_pizza",
+    "@type": "ingredient",
+    "food": "neopolitan_pizza",
+    "multiplier": 7
+  },
+  {
+    "@id": "8_pieces_neopolitan_pizza",
+    "@type": "ingredient",
+    "food": "neopolitan_pizza",
+    "multiplier": 8
+  },
+  {
+    "@id": "1_mcondalds_big_mac",
+    "@type": "ingredient",
+    "food": "mcondalds_big_mac",
+    "multiplier": 1
+  },
+  {
+    "@id": "1_mcondalds_mc_chicken",
+    "@type": "ingredient",
+    "food": "mcondalds_mc_chicken",
+    "multiplier": 1
+  },
+  {
+    "@id": "1_mcondalds_large_fries",
+    "@type": "ingredient",
+    "food": "mcondalds_large_fries",
+    "multiplier": 1
+  },
+  {
+    "@id": "1_mcondalds_large_chocolate_milkshake",
+    "@type": "ingredient",
+    "food": "mcondalds_large_chocolate_milkshake",
+    "multiplier": 1
   }
 ]

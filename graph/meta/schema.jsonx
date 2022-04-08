@@ -197,14 +197,16 @@
   "@id": "food",
   "properties": {
     "name": "string",
-    "ingredient": "ingredient"
+    "ingredient": "ingredient",
+    "base_quantity": "number",
+    "base_unit": "string"
     }
   },
   {
   "@id": "ingredient",
   "properties": {
     "food": "food",
-    "quantity": "string"
+    "multiplier": "string"
     }
   }
 ]

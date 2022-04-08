@@ -21,7 +21,7 @@ def visualise_all_graph_data(graph):
         for item in entity.items():
             if item[0] not in ["@id", "@type"]:
                 for value in catch_single_val(item[1]):
-                    value_strf = f"{(value[:75] + '..') if len(value) > 75 else value}"
+                    value_strf = f"{(value[:75] + '..') if len(str(value)) > 75 else value}"
                     G.add_edge(entity["@id"], value_strf, label=item[0])
 
     net = Network(height='100%', width='100%', directed =True)
